@@ -775,6 +775,7 @@
 
 /* Badge Styles */
 .badge-primary {
+    width: fit-content;
     display: inline-block;
     background: linear-gradient(135deg, #3090c7 0%, #60a5fa 100%);
     color: #fff;

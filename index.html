@@ -94,15 +94,18 @@
     </section>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0" data-aos="fade-down" data-aos-delay="300">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
         <div class="container">
-            <button class="navbar-toggler mx-auto my-2" type="button" data-bs-toggle="collapse"
+            <p class="d-lg-none d-flex align-baseline text-white mb-0">
+                Menu    
+            </p>
+            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
                 data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse py-lg-2" id="mainNavbar">
+                <ul class="navbar-nav justify-content-around w-100">
                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="aboutus.html">About Us</a>
                     </li>
@@ -118,54 +121,53 @@
         </div>
     </nav>
 
-    <!-- Main Navigation Area -->
-    <div class="circle-nav-container">
+    <!-- Modern Rounded Navigation Area -->
+    <div class="modern-nav-container">
 
-        <!-- Home Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
-            <div class="nav-circle circle-home" title="Visit Home Page">
-                <a href="home.html">
-                    <i class="fas fa-home home-icon"></i>
-                </a>
+        <!-- Home Card -->
+        <a href="home.html" class="modern-nav-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon-wrapper home-wrapper">
+                <i class="fas fa-home home-icon"></i>
             </div>
-            <h5 class="mt-3 fw-bold">Home Page</h5>
-        </div>
+            <div class="card-content">
+                <h5 class="fw-bold">Home Page</h5>
+            </div>
+        </a>
 
-        <!-- Machine 1 Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
-            <div class="nav-circle circle-img" title="View Products">
-                <a href="product.html">
-                    <img src="./btitex-machine-new/Venkateshwar machine/1mini.jpg" alt="Textile Machine">
-                </a>
+        <!-- Machine 1 Card -->
+        <a href="product.html" class="modern-nav-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon-wrapper">
+                <img src="./btitex-machine-new/Venkateshwar machine/1mini.jpg" alt="Venkateshwar Machine">
             </div>
-            <h5 class="mt-3 fw-bold">Venkateshwar Machine</h5>
-        </div>
+            <div class="card-content">
+                <h5 class="fw-bold">Venkateshwar Machine</h5>
+            </div>
+        </a>
 
-        <!-- Machine 2 Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="500">
-            <div class="nav-circle circle-img" title="View Products">
-                <a href="product.html#machine3">
-                    <img src="./btitex-machine-new/machine3/1mini.jpg" alt="Textile Machine">
-                </a>
+        <!-- Machine 2 Card -->
+        <a href="product.html#machine3" class="modern-nav-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon-wrapper">
+                <img src="./btitex-machine-new/machine3/1mini.jpg" alt="Super 2x1 Machine">
             </div>
-            <h5 class="mt-3 fw-bold">Super 2x1 Machine</h5>
-        </div>
+            <div class="card-content">
+                <h5 class="fw-bold">Super 2x1 Machine</h5>
+            </div>
+        </a>
 
-        <!-- Valve / Coming Soon Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="700">
-            <div class="nav-circle circle-coming-soon" title="Valve Products">
-                <a href="valve.html" class="text-decoration-none">
-                    <div class="coming-soon-text">VALVE</div>
-                    <div class="small fw-bold text-dark mt-2">COMING SOON</div>
-                </a>
+        <!-- Valve / Coming Soon Card -->
+        <a href="valve.html" class="modern-nav-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-icon-wrapper valve-wrapper">
+                <div class="valve-text">VALVE</div>
             </div>
-            <h5 class="mt-3 fw-bold">Valve Products</h5>
-        </div>
+            <div class="card-content">
+                <h5 class="fw-bold">Valve Products</h5>
+            </div>
+        </a>
 
     </div>
 
     <!-- Call to Action Section -->
-    <section class="py-5 bg-dark">
+    <section class="py-lg-5 pt-4 pb-0 bg-dark">
         <div class="container">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-8 mb-4 mb-md-0">
@@ -183,7 +185,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-md-5 pb-3">
+    <footer class="bg-dark text-white pt-lg-5 pt-4 pb-3">
         <div class="container">
             <div class="row text-center text-md-start">
                 <div class="col-md-4 mb-4">
@@ -191,7 +193,7 @@
                     <p class="small text-white-50">Established in 1979, BTI Tex Private Limited is a leading manufacturer, supplier, and importer of Power Loom, Rapier Loom, Water Jet Loom Machines, and more.</p>
                     <a href="aboutus.html" class="btn btn-sm btn-outline-light">Read More</a>
                 </div>
-                <div class="col-md-4 mb-4 text-center">
+                <div class="col-md-4 mb-md-4 mb-1 text-center">
                     <h3>Quick Links</h3>
                     <ul class="list-unstyled small">
                         <li class="mb-2"><a href="aboutus.html" class="text-white-50 text-decoration-none hover-primary">About Us</a></li>
@@ -200,7 +202,7 @@
                         <li class="mb-2"><a href="home.html#services" class="text-white-50 text-decoration-none hover-primary">Services</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 mb-4 text-center text-md-end">
+                <div class="col-md-4 mb-md-4 mb-1 text-center text-md-end">
                     <h3>Connect With Us</h3>
                     <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
                         <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank" class="text-white fs-4">
@@ -216,7 +218,7 @@
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
-                    <div class="mt-3">
+                    <div class="footer-links mt-3">
                         <p class="text-white-50 small mb-1"><i class="fas fa-phone me-2"></i>+91 997 893 1555</p>
                         <p class="text-white-50 small mb-0"><i class="fas fa-envelope me-2"></i>bti1979@gmail.com</p>
                     </div>
