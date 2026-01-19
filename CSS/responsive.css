@@ -1,32 +1,24 @@
+
 @media (max-width:1700px){
-    section.our-services{
-        margin-top: 100px;
-        margin-bottom: 10px;
-    }
-    section.our-services .service-card{
-        margin-top: 30px;
-    }
+    /* Removed unnecessary margin overrides */
 }
+
 @media (max-width:1100px){
-    section.our-services{
-        margin-top: 100px;
-        margin-bottom: -50px;
-    }
-    
+    /* Cleaned up layout adjustments */
     .big-deal .container{
-        margin-top: 80px;
+        margin-top: 4rem; /* Reasonable margin */
     }
     .latest-news .article-wrapper{
         flex-direction:column;
     }
     .latest-news .article-wrapper .card:nth-child(1){
         margin-right:0;
-        margin-bottom:4rem;
+        margin-bottom:2rem;
     }
 
     .moti-image{
-        width: 500px;
-        height: 500px;
+        width: 100%;
+        height: auto;
         display: flex;
     }
 }
@@ -34,51 +26,109 @@
 
 @media(max-width:465px){
     .moti-image{
-        width: 300px;
-        height: 400px;
+        width: 100%;
+        height: auto;
     }
 }
 
+
+
 @media (max-width:991px){
+    /* Topbar responsive: stack content on smaller screens */
+    header.topbar .container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    header.topbar .icons {
+        margin-bottom: 0.5rem;
+    }
+    header.topbar .auth {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap; 
+    }
+    
     header.hero{
+        border-bottom: 25px solid transparent; /* Fix spacing */
+        flex-direction: column;
+        padding-top: 2rem;
+        height: auto; 
+    }
+    
+    header.hero .hero-image {
+        position: static; 
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    
+    /* Header Info Section Responsive */
+    section.py-3 .row > div {
+        text-align: center !important;
+        margin-bottom: 1rem !important; /* Reduced bottom margin */
+        justify-content: center !important;
+    }
+    
+    section.py-3 .row {
         flex-direction: column;
     }
+
+    /* Font size adjustments for mobile header to prevent breaking */
+    section.py-3 h5.fs-6 {
+        font-size: 1.1rem !important;
+        font-weight: bold;
+    }
+    section.py-3 img.img-fluid {
+        max-height: 70px !important; /* Slightly smaller logo on mobile */
+    }
+
     .container{
         max-width: 100%;
+        padding: 0 20px;
     }
+    
     section.our-services{
-        margin-top: 380px;
-        margin-bottom: -50px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 3rem;
     }
 
     .moti-image{
-        width: 400px;
-        height: 500px;
+        width: 100%;
+        height: auto;
     }
 
     section.our-services .service-card{
-        margin-top: 50px;
+        margin-top: 2rem;
+        height: auto;
     }
+
+    
     .about-meal .about-meal-wrap img{
         width: 100%;
     }
     .about-meal .about-meal-wrap h2{
-        font-size: 24px;
-        margin-top: 30px;
+        font-size: 1.5rem;
+        margin-top: 1rem;
         text-align: center;
     }
     .about-meal .about-meal-wrap p{
-        font-size: 16px;
+        font-size: 1rem;
         text-align: justify;
     }
     .about-meal .about-meal-wrap{
-        font-size: 16px;
+        font-size: 1rem;
         text-align: center;
         flex-direction: column;
     }
-    .top-products .slider-btn{
+    
+    /* Keep slider buttons visible if possible, or style dots */
+    /* .top-products .slider-btn{
         display:none!important;
-    }
+    } */
     
     footer{
         margin-top: 0px;
@@ -93,7 +143,7 @@
 
 @media (max-width:768px){ 
     section.top-products .machine-slider .machine-card h2{
-        font-size: 0.75rem;
+        font-size: 1.1rem;
     }
     .about-meal .about-meal-wrap{
         font-size: 14px;
@@ -103,17 +153,26 @@
         width:100%;
         margin-bottom: 1rem;
     }
+    
     .big-deal .container{
-        margin-top: 450px;
+        margin-top: 3rem;
     }
+    
     section.contact-us{
         flex-direction: column;
+        height: auto; /* Flexible height */
+        padding-bottom: 2rem;
     }
+    
     section.contact-us .map{
         align-items: center;
+        width: 100%;
+        height: 300px;
+        margin-top: 2rem;
     }
+    
     section.our-services{
-        margin-top: 260px;
+        margin-top: 0;
     }
     section.our-services .card-wrapper{
         flex-direction:column;
@@ -122,18 +181,19 @@
         margin-bottom:1rem;
     }
     footer{
-        margin-top: 300px;
+        margin-top: 0;
+        padding-top: 3rem;
     }
     footer .container{
         flex-direction: column;
     }
     footer .box{
-        text-align: left;
+        text-align: center; /* Center footer on mobile usually looks better */
         margin-right:0;
-        margin-bottom:3rem;
+        margin-bottom:2rem;
     }
     footer .box:nth-child(3) h3{
-        text-align:left;
+        text-align: center;
     }
     footer .box:nth-child(3) > div{
         display:block;
@@ -141,72 +201,58 @@
 }
 
 @media( max-width:576px){
-    header.hero .hero-image{
-        height: 100px;
-        width: 100px;
+    header.hero .hero-image img{
+        max-height: 250px; /* Limit height on small screens */
     }
-    header.hero .container{
-        padding-left:1rem;
-    }
+    
     header.hero{
-        margin-top:-3rem;
+        margin-top: 0;
     }
+    
     .about-meal .about-meal-wrap{
-        font-size: 10px;
+        font-size: 14px;
     }
+    
     section{
-        margin-top: 50px;
+        margin-top: 0;
+        padding: 3rem 0;
     }
+    
     section.big-deal .timer > div{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
         margin-right:0.50rem;
         margin-bottom: 1rem;
     }
-    section.big-deal .timer{
-        margin-right:-0.5rem;
-    }
+    
     section.big-deal{
-        margin-top: 600px;
-        height: 100%;
+        margin-top: 0;
+        height: auto;
+        padding: 3rem 0;
     }
+    
     section.subscribe .container{
         flex-direction: column;
         padding:0.50rem;
     }
+    
     section.contact-us{
-        margin-top: -60px;
-        font-size: 20px;
+        margin-top: 0;
     }
+    
     section.contact-us .map{
-        align-items: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 0;
+        margin-right: 0;
     }
+    
     footer.copyright{
-            margin-top: 0;
-        }
-  
-    @media(max-width:320px){
-        section.our-services{
-            margin-top: 340px;
-            margin-bottom: -50px;
-        }
-        section.big-deal{
-            margin-top: 780px;
-            height: 100%;
-        }
-        section{
-            margin-top: 50px;
-        }
-        footer{
-            margin-top: 340px;
-        } 
-        footer.copyright{
-            margin-top: 0;
-        }
+        margin-top: 0;
+    }
 
-        
-} 
-
+    /* Smallest screens specific adjustments if needed */
+    @media(max-width:375px){
+        header.hero h1 {
+            font-size: 1.8rem;
+        }
+    }
 }

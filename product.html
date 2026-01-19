@@ -3,670 +3,729 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>Products - BTI TEX PVT.LTD | Premium Textile Machinery</title>
+    <meta name="description" content="Explore BTI TEX's premium range of power looms including Venkateshwar, Ganga, Sumo, and more. Quality textile machinery since 1979.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/prodres.css">
+    <link rel="stylesheet" href="./CSS/product.css">
     <link rel="stylesheet" href="./CSS/zoom.css">
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/js/app.js"></script>
-    <title>Document</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+
 </head>
-<body oncontextmenu="return false;">
-    <script>
-        $("body").on("contextmenu",function(e){
-            return false;
-           });
-         
-           $('body').bind('cut copy paste',function(e){
-            e.preventDefault();
-           });
-    </script>
-    <header class="topbar">
-        <div class="container flex justify-between items-center">
-             <div class="icons">
-                 <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/"><img src="./icons/facebook.svg" alt=""></a>
-                 <a href="https://www.indiamart.com/btitexprivatelimited/profile.html"><img src="./icons/google.svg" alt=""></a>
-                 <a href="https://wa.me/+919978931555" target="_blank"><img src="./icons/whatsapp.svg" alt=""></a>
-                 
-             </div>
-             <div class="auth flex justify-between items-center">
-                 <!-- <div>
-                     <img src="./icons/user-icon.svg" alt="">
-                     <a href="#">Since 1979</a>
-                 </div> -->
-                 <span class="divider"> | </span>
-                 <div>
-                     <img src="./icons/cart.svg" alt="">
-                     GST No. 24AACCB5856C1ZZ
-                 </div>
-                 <span class="divider"> | </span>
-             </div>
+<body>
+    <!-- Topbar -->
+    <header class="topbar bg-dark py-2 d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center text-white small flex-wrap">
+            <div class="icons d-flex gap-3">
+                <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank" class="text-white" aria-label="Facebook">
+                    <i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+                <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank" class="text-white" aria-label="IndiaMART">
+                    <i class="fab fa-google fa-lg"></i>
+                </a>
+                <a href="https://wa.me/+919978931555" target="_blank" class="text-white" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp fa-lg"></i>
+                </a>
+                <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white" aria-label="YouTube">
+                    <i class="fab fa-youtube fa-lg"></i>
+                </a>
+            </div>
+            <div class="auth d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-file-invoice me-2"></i>
+                    <span>GST No. 24AACCB5856C1ZZ</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <div class="top">
-             <div class="center">
-                 <div class="">
-                     <img src="./icons/phone.svg" style="margin-top: 10px;" alt="">
-                     <div>
-                         <h5>Mr. Zubair Shaikh <br> Call Us: +91 997 893 1555</h5>
-                         <h6>Email: info@btitex.in</h6>
-                     </div>
-                 </div>
-                 <div>
-                     <img  class="bti-logo" src="./btitex/btilogo.png">
-                 </div>
-                 <div class="">
-                     <img src="./icons/clock.svg" style="margin-top: 20px;" alt="">
-                     <div>
-                         <h5>Working Hours:</h5>
-                         <h6>Mon - Sat (9.00am - 5.00pm)</h6>
-                     </div>
-                 </div>
-             </div>
+    <!-- Info Section with Gear Pattern -->
+    <section class="py-4 position-relative gear-background">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left: Phone Info -->
+                <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start">
+                    <div class="d-flex align-items-center">
+                        <div class="icon-circle me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
+                            <p class="mb-0 small text-muted">
+                                <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a>
+                            </p>
+                            <p class="mb-0 small text-muted">
+                                <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Center: Logo -->
+                <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center">
+                    <a href="home.html">
+                        <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI TEX Logo">
+                    </a>
+                </div>
+                
+                <!-- Right: Hours Info -->
+                <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end">
+                    <div class="d-flex align-items-center">
+                        <div class="order-md-1 me-md-3 me-3">
+                            <h6 class="mb-0 fw-bold text-dark">Working Hours</h6>
+                            <p class="mb-0 small text-muted">Mon - Sat (10:00 AM - 5:00 PM)</p>
+                        </div>
+                        <div class="icon-circle order-md-2">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="navbar magic-shadow common-bg">
-             <div class="container flex justify-center center">
-                 <a href="index.html">Home</a>
-                 <a href="aboutus.html">About Us</a>
-                 <a href="product.html" class="active">Products</a>
-                 <a href="index.html#services">Services</a>
-                 <a href="index.html#contact">Contact Us</a>
-             </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
+        <div class="container">
+            <button class="navbar-toggler mx-auto my-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-4 py-3 active" href="product.html" style="background-color: #3090c7;">Products</a></li>
+                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="valve.html">Valve</a></li>
+                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <h1 class="section-heading">Top Products</h1> 
-    <div class="product-page" style="margin-bottom: 50px;">
-        <div class="container-zoom" id="wploommachine">
-            <!-- Zoom Container Start -->
-            <div class="xzoom-container">
-                <img src="./btitex-machine-new/Venkateshwar machine/1mini.jpg" class="xzoom" xoriginal="./btitex-machine-new/Venkateshwar machine/1.jpg">
-                <div class="xzoom-thumbs">
-                    <a href="./btitex-machine-new/Venkateshwar machine/1.jpg">
-                        <img class="xzoom-gallery" src="./btitex-machine-new/Venkateshwar machine/1mini.jpg" xpreview="./btitex-machine-new/Venkateshwar machine/1mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/Venkateshwar machine/3.jpg">
-                        <img class="xzoom-gallery" src="./btitex-machine-new/Venkateshwar machine/3mini.jpg">
-                    </a>
 
-                    <a href="./btitex-machine-new/Venkateshwar machine/2.jpg">
-                        <img class="xzoom-gallery" src="./btitex-machine-new/Venkateshwar machine/2mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/Venkateshwar machine/4.jpg">
-                        <img class="xzoom-gallery" src="./btitex-machine-new/Venkateshwar machine/4mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/Venkateshwar machine/5.jpg">
-                        <img class="xzoom-gallery" src="./btitex-machine-new/Venkateshwar machine/5mini.jpg">
-                    </a>
-                </div>
-            </div>
-    
-            <!-- Zoom Container end -->
-    
-            
-            <!-- Description Start -->
-            <div class="description">
-                <h1>
-                    
-                    Venkateshwar Type Machine
-                </h1>
-                <!-- <p>
-                    Usage/Application : Weaving<br>
-                    Loom Dimension : 54 inches<br>
-                    Power : 1.5 kW<br>
-                    Automation Grade : Automatic<br>
-                    Brand : BTI<br>
-                    Voltage : 440V<br>
-                    Machine Speed : 150 rpm<br>
-    
-                </p> -->
-                <span>
-                     &#x20B9; 1,00,000/Unit <br> Approx 
-                </span>
-                <div>
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <button class="btn btn-whatsapp">
-                            WhatsApp Now 
-                        </button>
-                    </a>
-                    
-                    <button class="btn btn-secondary" onclick="window.location.href='/index.html#slick-slider'">
-                        Go Back 
-                    </button>
-                    <!-- <button class="btn btn-secondary">
-                        Go Back 
-                    </button> -->
-                    <!-- <button class="cart">
-                        Add to Cart
-                    </button> -->
-                </div>
-            </div>
-            <!-- Description End -->
-        </div>
-        
-        <div class="container-zoom" id="machine2">
-            <!-- Zoom Container Start -->
-            <div class="xzoom-container">
-                <img src="./btitex-machine-new/chau maru machine/1mini.jpg" class="xzoom1" xoriginal="./btitex-machine-new/chau maru machine/1.jpg">
-                <div class="xzoom-thumbs">
-
-                    
-                    <a href="./btitex-machine-new/chau maru machine/1.jpg">
-                        <img class="xzoom-gallery1" src="./btitex-machine-new/chau maru machine/1mini.jpg" xpreview="./btitex-machine-new/chau maru machine/1mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/chau maru machine/2.jpg">
-                        <img class="xzoom-gallery1" src="./btitex-machine-new/chau maru machine/2mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/chau maru machine/3.jpg">
-                        <img class="xzoom-gallery1" src="./btitex-machine-new/chau maru machine/3mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/chau maru machine/4.jpg">
-                        <img class="xzoom-gallery1" src="./btitex-machine-new/chau maru machine/4mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/chau maru machine/5.jpg">
-                        <img class="xzoom-gallery1" src="./btitex-machine-new/chau maru machine/5mini.jpg">
-                    </a>
-                </div>
-            </div>
-    
-            <!-- Zoom Container end -->
-    
-            
-            <!-- Description Start -->
-            <div class="description">
-                <h1>
-                    
-                    Overpick Range Type Machine
-                </h1>
-                <!-- <p>
-                    Usage/Application : Weaving<br>
-                    Loom Dimension : 54 inches<br>
-                    Power : 1.5 kW<br>
-                    Automation Grade : Automatic<br>
-                    Brand : BTI<br>
-                    Voltage : 440V<br>
-                    Machine Speed : 150 rpm<br>
-    
-                </p> -->
-                <span>
-                    &#x20B9; 50,000/Unit <br> Approx..
-                </span>
-                <div>
-
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <button class="btn btn-whatsapp">
-                            WhatsApp Now 
-                        </button>
-                    </a>
-
-
-                    <button class="btn btn-secondary" onclick="window.location.href='/index.html#slick-slider'">
-                        Go Back 
-                    </button>
-                    <!-- <button class="btn btn-secondary">
-                        Go Back 
-                    </button> -->
-                    <!-- <button class="cart">
-                        Add to Cart
-                    </button> -->
-                </div>
-            </div>
-            <!-- Description End -->
-        </div>
-
-        <div class="container-zoom" id="machine3">
-            <!-- Zoom Container Start -->
-            <div class="xzoom-container">
-                <img src="./btitex-machine-new/machine3/1mini.jpg" class="xzoom2" xoriginal="./btitex-machine-new/machine3/1.jpg">
-                <div class="xzoom-thumbs">
-
-                    
-                    <a href="./btitex-machine-new/machine3/1.jpg">
-                        <img class="xzoom-gallery2" src="./btitex-machine-new/machine3/1mini.jpg" xpreview="./btitex-machine-new/machine3/1mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/machine3/2.jpg">
-                        <img class="xzoom-gallery2" src="./btitex-machine-new/machine3/2mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/machine3/3.jpg">
-                        <img class="xzoom-gallery2" src="./btitex-machine-new/machine3/3mini.jpg">
-                    </a>
-    
-                    <a href="./btitex-machine-new/machine3/4.jpg">
-                        <img class="xzoom-gallery2" src="./btitex-machine-new/machine3/4mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/machine3/5.jpg">
-                        <img class="xzoom-gallery2" src="./btitex-machine-new/machine3/5mini.jpg">
-                    </a>
-
-
-                </div>
-            </div>
-    
-            <!-- Zoom Container end -->
-    
-            
-            <!-- Description Start -->
-            <div class="description">
-                <h1>
-                    
-                    Super 2x1 Machine
-                </h1>
-                <!-- <p>
-                    Usage/Application : Weaving<br>
-                    Loom Dimension : 54 inches<br>
-                    Power : 1.5 kW<br>
-                    Automation Grade : Automatic<br>
-                    Brand : BTI<br>
-                    Voltage : 440V<br>
-                    Machine Speed : 150 rpm<br>
-    
-                </p> -->
-                <span>
-                    &#x20B9; 85,000/Unit <br> Approx..
-                </span>
-                <div>
-
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <button class="btn btn-whatsapp">
-                            WhatsApp Now 
-                        </button>
-                    </a>
-
-
-                    <button class="btn btn-secondary" onclick="window.location.href='/index.html#slick-slider'">
-                        Go Back 
-                    </button>
-                    <!-- <button class="btn btn-secondary">
-                        Go Back 
-                    </button> -->
-                    <!-- <button class="cart">
-                        Add to Cart
-                    </button> -->
-                </div>
-            </div>
-            <!-- Description End -->
-        </div>
-
-        <div class="container-zoom" id="gangamachine">
-            <!-- Zoom Container Start -->
-            <div class="xzoom-container">
-                <img src="./btitex-machine-new/Ganga Machine/1mini.jpg" class="xzoom3" xoriginal="./btitex-machine-new/Ganga Machine/1.jpg">
-                <div class="xzoom-thumbs">
-
-                    
-                    <a href="./btitex-machine-new/Ganga Machine/1.jpg">
-                        <img class="xzoom-gallery3" src="./btitex-machine-new/Ganga Machine/1mini.jpg" xpreview="./btitex-machine-new/Ganga Machine/1mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/Ganga Machine/2.jpg">
-                        <img class="xzoom-gallery3" src="./btitex-machine-new/Ganga Machine/2mini.jpg" >
-                    </a>
-
-                    <a href="./btitex-machine-new/Ganga Machine/3mini.jpg">
-                        <img class="xzoom-gallery3" src="./btitex-machine-new/Ganga Machine/3mini2.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/Ganga Machine/4.jpg">
-                        <img class="xzoom-gallery3" src="./btitex-machine-new/Ganga Machine/4mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/Ganga Machine/5.jpg">
-                        <img class="xzoom-gallery3" src="./btitex-machine-new/Ganga Machine/5mini.jpg">
-                    </a>
-
-                        
-                
-                </div>
-            </div>
-    
-            <!-- Zoom Container end -->
-    
-            
-            <!-- Description Start -->
-            <div class="description">
-                <h1>
-                    
-                    Ganga Type Machine
-                </h1>
-                <!-- <p>
-                    Usage/Application : Weaving<br>
-                    Loom Dimension : 54 inches<br>
-                    Power : 1.5 kW<br>
-                    Automation Grade : Automatic<br>
-                    Brand : BTI<br>
-                    Voltage : 440V<br>
-                    Machine Speed : 150 rpm<br>
-    
-                </p> -->
-                <span>
-                    &#x20B9; 1,10,000/Unit <br> Approx..
-                </span>
-                <div>
-
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <button class="btn btn-whatsapp">
-                            WhatsApp Now 
-                        </button>
-                    </a>
-
-
-                    <button class="btn btn-secondary" onclick="window.location.href='/index.html#slick-slider'">
-                        Go Back 
-                    </button>
-                    <!-- <button class="btn btn-secondary">
-                        Go Back 
-                    </button> -->
-                    <!-- <button class="cart">
-                        Add to Cart
-                    </button> -->
-                </div>
-            </div>
-            <!-- Description End -->
-        </div>
-
-        <div class="container-zoom" id="sumomachine">
-            <!-- Zoom Container Start -->
-            <div class="xzoom-container">
-                <img src="./btitex-machine-new/Sumo Machine/1mini.jpg" class="xzoom4" xoriginal="./btitex-machine-new/Sumo Machine/1.jpg">
-                <div class="xzoom-thumbs">
-
-                    
-                    <a href="./btitex-machine-new/Sumo Machine/1.jpg">
-                        <img class="xzoom-gallery4" src="./btitex-machine-new/Sumo Machine/1mini.jpg" xpreview="./btitex-machine-new/Sumo Machine/1mini.jpg">
-                    </a>
-                    
-                    <a href="./btitex-machine-new/Sumo Machine/2.jpg">
-                        <img class="xzoom-gallery4" src="./btitex-machine-new/Sumo Machine/2mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/Sumo Machine/3.jpg">
-                        <img class="xzoom-gallery4" src="./btitex-machine-new/Sumo Machine/3mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/Sumo Machine/4.jpg">
-                        <img class="xzoom-gallery4" src="./btitex-machine-new/Sumo Machine/4mini.jpg">
-                    </a>
-    
-                    
-                </div>
-            </div>
-    
-            <!-- Zoom Container end -->
-    
-            
-            <!-- Description Start -->
-            <div class="description">
-                <h1>
-                    
-                    Sumo Range Machine
-                </h1>
-                <!-- <p>
-                    Usage/Application:	Textile <br>
-                    Power:	0.75 HP <br>
-                    Automatic Grade:	Semi-Automatic <br>
-                    Brand:	BTI <br>
-                    Voltage:	310 V <br>
-                    Machine Speed:	80-120 RPM <br>
-                    Frequency:	50-60 Hz <br>
-                    Country of Origin:	Made in India <br>
-
-                </p> -->
-                <span>
-                     &#x20B9; 1,50,000/Unit <br>Approx
-                </span>
-                <div>
-
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <button class="btn btn-whatsapp">
-                            WhatsApp Now 
-                        </button>
-                    </a>
-
-
-                    <button class="btn btn-secondary" onclick="window.location.href='/index.html#slick-slider'">
-                        Go Back 
-                    </button>
-                    <!-- <button class="btn btn-secondary">
-                        Go Back 
-                    </button> -->
-                    <!-- <button class="cart">
-                        Add to Cart
-                    </button> -->
-                </div>
-            </div>
-            <!-- Description End -->
-        </div>
-
-        <div class="container-zoom" id="uppowerloommachine">
-            <!-- Zoom Container Start -->
-            <div class="xzoom-container">
-                <img src="./btitex-machine-new/Under Pick Machine/1mini.jpg" class="xzoom6" xoriginal="./btitex-machine-new/Under Pick Machine/1.jpg">
-                <div class="xzoom-thumbs">
-
-                    
-                    <a href="./btitex-machine-new/Under Pick Machine/1.jpg">
-                        <img class="xzoom-gallery6" src="./btitex-machine-new/Under Pick Machine/1mini.jpg" xpreview="./btitex-machine-new/Under Pick Machine/1mini.jpg">
-                    </a>
-                    
-                    <a href="./btitex-machine-new/Under Pick Machine/2.jpg">
-                        <img class="xzoom-gallery6" src="./btitex-machine-new/Under Pick Machine/2mini.jpg" >
-                    </a>
-
-                    <a href="./btitex-machine-new/Under Pick Machine/3.jpg">
-                        <img class="xzoom-gallery6" src="./btitex-machine-new/Under Pick Machine/3mini.jpg" >
-                    </a>
-
-                    <a href="./btitex-machine-new/Under Pick Machine/4.jpg">
-                        <img class="xzoom-gallery6" src="./btitex-machine-new/Under Pick Machine/4mini.jpg" >
-                    </a>
-
-                    <a href="./btitex-machine-new/Under Pick Machine/5.jpg">
-                        <img class="xzoom-gallery6" src="./btitex-machine-new/Under Pick Machine/5mini.jpg" >
-                    </a>
-                    
-                </div>
-            </div>
-            
-            <!-- Zoom Container end -->
-    
-            
-            <!-- Description Start -->
-            <div class="description">
-                <h1>
-                    
-                    Super Wider Width Type Machine
-                </h1>
-                <!-- <p>
-                    Power Consumption:	1.5 kw<br>
-                    Automation Grade:	Semi-Automatic<br>
-                    Brand:	BTI<br>
-                    Frequency:	50-60Hz<br>
-                    Voltage:	310 V<br>
-                    Reed Space:	36 inch<br>
-                    Power Source:	Electric<br>
-                    Machine Speed:	160-230 rpm<br>
-                </p> -->
-                <span>
-                     &#x20B9; 95,000/Unit <br>Approx
-                </span>
-                <div>
-
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <button class="btn btn-whatsapp">
-                            WhatsApp Now 
-                        </button>
-                    </a>
-
-
-                    <button class="btn btn-secondary" onclick="window.location.href='/index.html#slick-slider'">
-                        Go Back 
-                    </button>
-                    <!-- <button class="btn btn-secondary">
-                        Go Back 
-                    </button> -->
-                    <!-- <button class="cart">
-                        Add to Cart
-                    </button> -->
-                </div>
-            </div>
-            <!-- Description End -->
-        </div>
-
-        <div class="container-zoom" id="butternarmada">
-            <!-- Zoom Container Start -->
-            
-            <div class="xzoom-container">
-                <img src="./btitex-machine-new/butter narmada machine/1mini.jpg" class="xzoom5" xoriginal="./btitex-machine-new/butter narmada machine/1.jpg">
-                <div class="xzoom-thumbs">
-
-                    
-                    <a href="./btitex-machine-new/butter narmada machine/1.jpg">
-                        <img class="xzoom-gallery5" src="./btitex-machine-new/butter narmada machine/1mini.jpg" xpreview="./btitex-machine-new/butter narmada machine/1mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/butter narmada machine/2.jpg">
-                        <img class="xzoom-gallery5" src="./btitex-machine-new/butter narmada machine/2mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/butter narmada machine/3.jpg">
-                        <img class="xzoom-gallery5" src="./btitex-machine-new/butter narmada machine/3mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/butter narmada machine/4.jpg">
-                        <img class="xzoom-gallery5" src="./btitex-machine-new/butter narmada machine/4mini.jpg">
-                    </a>
-
-                    <a href="./btitex-machine-new/butter narmada machine/5.jpg">
-                        <img class="xzoom-gallery5" src="./btitex-machine-new/butter narmada machine/5mini.jpg">
-                    </a>
-    
-                    
-                </div>
-            </div>
-    
-            <!-- Zoom Container end -->
-    
-            
-            <!-- Description Start -->
-            <div class="description">
-                <h1>
-                    
-                    Butter Narmada Type Machine
-                </h1>
-                <!-- <p>
-                    Model Name/Number:	Butter <br>
-                    Power Consumption:	0.37 Units per hour<br>
-                    Usage/Application:	Weaving<br>
-                    Power:	0.75 HP<br>
-                    Brand:	BTI<br>
-                    Machine Type:	Automatic, Semi-Automatic<br>
-                    Weight:	820 Kg<br>
-                    Machine Speed (RPM):	80-100 Rpm<br>
-                    Country of Origin:	Made in India<br>
-                    Material:	Grey Iron With Ductile Iron Parts<br>
-                    Type:	Vwara Type
-
-                </p> -->
-                <span>
-                    &#x20B9; 75,000/Unit <br> Approx..
-                </span>
-                <div>
-
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <button class="btn btn-whatsapp">
-                            WhatsApp Now 
-                        </button>
-                    </a>
-
-
-                    <button class="btn btn-secondary" onclick="window.location.href='/index.html#slick-slider'">
-                        Go Back 
-                    </button>
-                    <!-- <button class="cart">
-                        Add to Cart
-                    </button> -->
-                </div>
-            </div>
-            <!-- Description End -->
-        </div>
-    </div>
-
-    <footer>
+    <!-- Product Hero Section -->
+    <section class="product-hero">
         <div class="container">
-            <div class="box">
-                <h3>About US</h3>
-                <p> Established in the year of 2005, we “BTI Tex Private Limited” are the leading, 
-                    Manufacturer, Supplier and Importer of an extensive array of Power Loom, Rapier Loom, 
-                    Water Jet Loom Machine etc.</p>
-             <button class="btn btn-secondary" onclick="window.location.href='/aboutus.html'">Read More</button>
-             </div>
-            <div class="box">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li><a href="aboutus.html">About Us</a>
-                    </li>
-                    <!-- <li><a href="#">Products</a>
-                    </li> -->
-                    <li><a href="index.html#services">Services</a>
-                    </li>
-                    <li><a href="index.html#contact">Contact Us</a>
-                    </li>
-                </ul>
+            <div class="product-hero-content" data-aos="fade-up" data-aos-duration="800">
+                <h1>Our <span>Products</span></h1>
+                <p>Discover our premium range of power loom machines crafted with precision and excellence since 1979</p>
             </div>
-            <div class="box">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank">
-                            <img src="./icons/facebook.svg" alt="">
-                            <span>Facebook</span>
-                        </a>
-                    </li>
-                    
-                 <li>
-                     <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank">
-                         <img src="./icons/google.svg" alt="">
-                         <span>Google</span>
-                     </a>
-                 </li>
-                 
-                 <li>
-                    <a href="https://wa.me/+919978931555" target="_blank">
-                        <img src="./icons/whatsapp.svg" alt="">
-                        <span>WhatsApp</span>
-                    </a>
+        </div>
+    </section>
 
-                </li>
-
-                </ul>
+    <!-- Main Product Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="section-title-modern" data-aos="fade-up">
+                <h2>Explore Our Machines</h2>
             </div>
             
+            <!-- Filter Section -->
+            <div class="filter-container" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>All Products
+                </button>
+                <button class="filter-btn" data-filter="venkateshwar">
+                    <i class="fas fa-cog"></i>Venkateshwar
+                </button>
+                <button class="filter-btn" data-filter="overpick">
+                    <i class="fas fa-industry"></i>Overpick Range
+                </button>
+                <button class="filter-btn" data-filter="super2x1">
+                    <i class="fas fa-cube"></i>Super 2x1
+                </button>
+                <button class="filter-btn" data-filter="ganga">
+                    <i class="fas fa-cogs"></i>Ganga Type
+                </button>
+                <button class="filter-btn" data-filter="sumo">
+                    <i class="fas fa-truck-loading"></i>Sumo Range
+                </button>
+                <button class="filter-btn" data-filter="wider">
+                    <i class="fas fa-expand-arrows-alt"></i>Super Wider
+                </button>
+                <button class="filter-btn" data-filter="butter">
+                    <i class="fas fa-water"></i>Butter Narmada
+                </button>
+            </div>
+
+            <!-- Products Container -->
+            <div class="product-page">
+                
+                <!-- Product 1: Venkateshwar -->
+                <div class="product-card-row product-item venkateshwar" id="wploommachine" data-aos="fade-up" data-aos-duration="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="xzoom-container">
+                                <img src="./btitex-machine-new/Venkateshwar machine/1mini.jpg" 
+                                     class="xzoom img-fluid" 
+                                     xoriginal="./btitex-machine-new/Venkateshwar machine/1.jpg" 
+                                     alt="Venkateshwar Type Machine">
+                                <div class="xzoom-thumbs mt-3 d-flex justify-content-center flex-wrap gap-2">
+                                    <a href="./btitex-machine-new/Venkateshwar machine/1.jpg">
+                                        <img class="xzoom-gallery" width="60" src="./btitex-machine-new/Venkateshwar machine/1mini.jpg" xpreview="./btitex-machine-new/Venkateshwar machine/1mini.jpg" alt="Thumbnail 1">
+                                    </a>
+                                    <a href="./btitex-machine-new/Venkateshwar machine/3.jpg">
+                                        <img class="xzoom-gallery" width="60" src="./btitex-machine-new/Venkateshwar machine/3mini.jpg" alt="Thumbnail 2">
+                                    </a>
+                                    <a href="./btitex-machine-new/Venkateshwar machine/2.jpg">
+                                        <img class="xzoom-gallery" width="60" src="./btitex-machine-new/Venkateshwar machine/2mini.jpg" alt="Thumbnail 3">
+                                    </a>
+                                    <a href="./btitex-machine-new/Venkateshwar machine/4.jpg">
+                                        <img class="xzoom-gallery" width="60" src="./btitex-machine-new/Venkateshwar machine/4mini.jpg" alt="Thumbnail 4">
+                                    </a>
+                                    <a href="./btitex-machine-new/Venkateshwar machine/5.jpg">
+                                        <img class="xzoom-gallery" width="60" src="./btitex-machine-new/Venkateshwar machine/5mini.jpg" alt="Thumbnail 5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <span class="product-badge">Premium</span>
+                                <h2>Venkateshwar Type Machine</h2>
+                                <div class="product-specs">
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>High Efficiency</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Durable Build</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Low Maintenance</span>
+                                </div>
+                                <div class="price">&#x20B9; 1,00,000 <span class="currency">/ Unit</span></div>
+                                <div class="product-cta">
+                                    <a href="https://wa.me/+919978931555?text=I'm%20interested%20in%20Venkateshwar%20Type%20Machine" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Get Quote on WhatsApp</span>
+                                    </a>
+                                    <a href="home.html" class="btn-view-details">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2: Overpick Range -->
+                <div class="product-card-row product-item overpick" id="machine2" data-aos="fade-up" data-aos-duration="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="xzoom-container">
+                                <img src="./btitex-machine-new/chau maru machine/1mini.jpg" 
+                                     class="xzoom1 img-fluid" 
+                                     xoriginal="./btitex-machine-new/chau maru machine/1.jpg"
+                                     alt="Overpick Range Machine">
+                                <div class="xzoom-thumbs mt-3 d-flex justify-content-center flex-wrap gap-2">
+                                    <a href="./btitex-machine-new/chau maru machine/1.jpg">
+                                        <img class="xzoom-gallery1" width="60" src="./btitex-machine-new/chau maru machine/1mini.jpg" xpreview="./btitex-machine-new/chau maru machine/1mini.jpg" alt="Thumbnail 1">
+                                    </a>
+                                    <a href="./btitex-machine-new/chau maru machine/2.jpg">
+                                        <img class="xzoom-gallery1" width="60" src="./btitex-machine-new/chau maru machine/2mini.jpg" alt="Thumbnail 2">
+                                    </a>
+                                    <a href="./btitex-machine-new/chau maru machine/3.jpg">
+                                        <img class="xzoom-gallery1" width="60" src="./btitex-machine-new/chau maru machine/3mini.jpg" alt="Thumbnail 3">
+                                    </a>
+                                    <a href="./btitex-machine-new/chau maru machine/4.jpg">
+                                        <img class="xzoom-gallery1" width="60" src="./btitex-machine-new/chau maru machine/4mini.jpg" alt="Thumbnail 4">
+                                    </a>
+                                    <a href="./btitex-machine-new/chau maru machine/5.jpg">
+                                        <img class="xzoom-gallery1" width="60" src="./btitex-machine-new/chau maru machine/5mini.jpg" alt="Thumbnail 5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <span class="product-badge">Best Value</span>
+                                <h2>Overpick Range Type Machine</h2>
+                                <div class="product-specs">
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Cost Effective</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Easy Operation</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Reliable</span>
+                                </div>
+                                <div class="price">&#x20B9; 50,000 <span class="currency">/ Unit</span></div>
+                                <div class="product-cta">
+                                    <a href="https://wa.me/+919978931555?text=I'm%20interested%20in%20Overpick%20Range%20Machine" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Get Quote on WhatsApp</span>
+                                    </a>
+                                    <a href="home.html" class="btn-view-details">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Super 2x1 -->
+                <div class="product-card-row product-item super2x1" id="machine3" data-aos="fade-up" data-aos-duration="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="xzoom-container">
+                                <img src="./btitex-machine-new/machine3/1mini.jpg" 
+                                     class="xzoom2 img-fluid" 
+                                     xoriginal="./btitex-machine-new/machine3/1.jpg"
+                                     alt="Super 2x1 Machine">
+                                <div class="xzoom-thumbs mt-3 d-flex justify-content-center flex-wrap gap-2">
+                                    <a href="./btitex-machine-new/machine3/1.jpg">
+                                        <img class="xzoom-gallery2" width="60" src="./btitex-machine-new/machine3/1mini.jpg" xpreview="./btitex-machine-new/machine3/1mini.jpg" alt="Thumbnail 1">
+                                    </a>
+                                    <a href="./btitex-machine-new/machine3/2.jpg">
+                                        <img class="xzoom-gallery2" width="60" src="./btitex-machine-new/machine3/2mini.jpg" alt="Thumbnail 2">
+                                    </a>
+                                    <a href="./btitex-machine-new/machine3/3.jpg">
+                                        <img class="xzoom-gallery2" width="60" src="./btitex-machine-new/machine3/3mini.jpg" alt="Thumbnail 3">
+                                    </a>
+                                    <a href="./btitex-machine-new/machine3/4.jpg">
+                                        <img class="xzoom-gallery2" width="60" src="./btitex-machine-new/machine3/4mini.jpg" alt="Thumbnail 4">
+                                    </a>
+                                    <a href="./btitex-machine-new/machine3/5.jpg">
+                                        <img class="xzoom-gallery2" width="60" src="./btitex-machine-new/machine3/5mini.jpg" alt="Thumbnail 5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <span class="product-badge">Popular</span>
+                                <h2>Super 2x1 Machine</h2>
+                                <div class="product-specs">
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Double Output</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Space Saving</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Efficient</span>
+                                </div>
+                                <div class="price">&#x20B9; 85,000 <span class="currency">/ Unit</span></div>
+                                <div class="product-cta">
+                                    <a href="https://wa.me/+919978931555?text=I'm%20interested%20in%20Super%202x1%20Machine" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Get Quote on WhatsApp</span>
+                                    </a>
+                                    <a href="home.html" class="btn-view-details">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: Ganga Type -->
+                <div class="product-card-row product-item ganga" id="gangamachine" data-aos="fade-up" data-aos-duration="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="xzoom-container">
+                                <img src="./btitex-machine-new/Ganga Machine/1mini.jpg" 
+                                     class="xzoom3 img-fluid" 
+                                     xoriginal="./btitex-machine-new/Ganga Machine/1.jpg"
+                                     alt="Ganga Type Machine">
+                                <div class="xzoom-thumbs mt-3 d-flex justify-content-center flex-wrap gap-2">
+                                    <a href="./btitex-machine-new/Ganga Machine/1.jpg">
+                                        <img class="xzoom-gallery3" width="60" src="./btitex-machine-new/Ganga Machine/1mini.jpg" xpreview="./btitex-machine-new/Ganga Machine/1mini.jpg" alt="Thumbnail 1">
+                                    </a>
+                                    <a href="./btitex-machine-new/Ganga Machine/2.jpg">
+                                        <img class="xzoom-gallery3" width="60" src="./btitex-machine-new/Ganga Machine/2mini.jpg" alt="Thumbnail 2">
+                                    </a>
+                                    <a href="./btitex-machine-new/Ganga Machine/3mini.jpg">
+                                        <img class="xzoom-gallery3" width="60" src="./btitex-machine-new/Ganga Machine/3mini2.jpg" alt="Thumbnail 3">
+                                    </a>
+                                    <a href="./btitex-machine-new/Ganga Machine/4.jpg">
+                                        <img class="xzoom-gallery3" width="60" src="./btitex-machine-new/Ganga Machine/4mini.jpg" alt="Thumbnail 4">
+                                    </a>
+                                    <a href="./btitex-machine-new/Ganga Machine/5.jpg">
+                                        <img class="xzoom-gallery3" width="60" src="./btitex-machine-new/Ganga Machine/5mini.jpg" alt="Thumbnail 5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <span class="product-badge">Premium</span>
+                                <h2>Ganga Type Machine</h2>
+                                <div class="product-specs">
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Heavy Duty</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Industrial Grade</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Long Life</span>
+                                </div>
+                                <div class="price">&#x20B9; 1,10,000 <span class="currency">/ Unit</span></div>
+                                <div class="product-cta">
+                                    <a href="https://wa.me/+919978931555?text=I'm%20interested%20in%20Ganga%20Type%20Machine" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Get Quote on WhatsApp</span>
+                                    </a>
+                                    <a href="home.html" class="btn-view-details">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5: Sumo Range -->
+                <div class="product-card-row product-item sumo" id="sumomachine" data-aos="fade-up" data-aos-duration="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="xzoom-container">
+                                <img src="./btitex-machine-new/Sumo Machine/1mini.jpg" 
+                                     class="xzoom4 img-fluid" 
+                                     xoriginal="./btitex-machine-new/Sumo Machine/1.jpg"
+                                     alt="Sumo Range Machine">
+                                <div class="xzoom-thumbs mt-3 d-flex justify-content-center flex-wrap gap-2">
+                                    <a href="./btitex-machine-new/Sumo Machine/1.jpg">
+                                        <img class="xzoom-gallery4" width="60" src="./btitex-machine-new/Sumo Machine/1mini.jpg" xpreview="./btitex-machine-new/Sumo Machine/1mini.jpg" alt="Thumbnail 1">
+                                    </a>
+                                    <a href="./btitex-machine-new/Sumo Machine/2.jpg">
+                                        <img class="xzoom-gallery4" width="60" src="./btitex-machine-new/Sumo Machine/2mini.jpg" alt="Thumbnail 2">
+                                    </a>
+                                    <a href="./btitex-machine-new/Sumo Machine/3.jpg">
+                                        <img class="xzoom-gallery4" width="60" src="./btitex-machine-new/Sumo Machine/3mini.jpg" alt="Thumbnail 3">
+                                    </a>
+                                    <a href="./btitex-machine-new/Sumo Machine/4.jpg">
+                                        <img class="xzoom-gallery4" width="60" src="./btitex-machine-new/Sumo Machine/4mini.jpg" alt="Thumbnail 4">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <span class="product-badge">Heavy Duty</span>
+                                <h2>Sumo Range Machine</h2>
+                                <div class="product-specs">
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Extra Power</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Robust Design</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>High Capacity</span>
+                                </div>
+                                <div class="price">&#x20B9; 1,50,000 <span class="currency">/ Unit</span></div>
+                                <div class="product-cta">
+                                    <a href="https://wa.me/+919978931555?text=I'm%20interested%20in%20Sumo%20Range%20Machine" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Get Quote on WhatsApp</span>
+                                    </a>
+                                    <a href="home.html" class="btn-view-details">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6: Super Wider Width -->
+                <div class="product-card-row product-item wider" id="uppowerloommachine" data-aos="fade-up" data-aos-duration="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="xzoom-container">
+                                <img src="./btitex-machine-new/Under Pick Machine/1mini.jpg" 
+                                     class="xzoom6 img-fluid" 
+                                     xoriginal="./btitex-machine-new/Under Pick Machine/1.jpg"
+                                     alt="Super Wider Width Machine">
+                                <div class="xzoom-thumbs mt-3 d-flex justify-content-center flex-wrap gap-2">
+                                    <a href="./btitex-machine-new/Under Pick Machine/1.jpg">
+                                        <img class="xzoom-gallery6" width="60" src="./btitex-machine-new/Under Pick Machine/1mini.jpg" xpreview="./btitex-machine-new/Under Pick Machine/1mini.jpg" alt="Thumbnail 1">
+                                    </a>
+                                    <a href="./btitex-machine-new/Under Pick Machine/2.jpg">
+                                        <img class="xzoom-gallery6" width="60" src="./btitex-machine-new/Under Pick Machine/2mini.jpg" alt="Thumbnail 2">
+                                    </a>
+                                    <a href="./btitex-machine-new/Under Pick Machine/3.jpg">
+                                        <img class="xzoom-gallery6" width="60" src="./btitex-machine-new/Under Pick Machine/3mini.jpg" alt="Thumbnail 3">
+                                    </a>
+                                    <a href="./btitex-machine-new/Under Pick Machine/4.jpg">
+                                        <img class="xzoom-gallery6" width="60" src="./btitex-machine-new/Under Pick Machine/4mini.jpg" alt="Thumbnail 4">
+                                    </a>
+                                    <a href="./btitex-machine-new/Under Pick Machine/5.jpg">
+                                        <img class="xzoom-gallery6" width="60" src="./btitex-machine-new/Under Pick Machine/5mini.jpg" alt="Thumbnail 5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <span class="product-badge">Wide Format</span>
+                                <h2>Super Wider Width Type Machine</h2>
+                                <div class="product-specs">
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Wide Width</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Versatile</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Professional</span>
+                                </div>
+                                <div class="price">&#x20B9; 95,000 <span class="currency">/ Unit</span></div>
+                                <div class="product-cta">
+                                    <a href="https://wa.me/+919978931555?text=I'm%20interested%20in%20Super%20Wider%20Width%20Machine" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Get Quote on WhatsApp</span>
+                                    </a>
+                                    <a href="home.html" class="btn-view-details">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7: Butter Narmada -->
+                <div class="product-card-row product-item butter" id="butternarmada" data-aos="fade-up" data-aos-duration="600">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="xzoom-container">
+                                <img src="./btitex-machine-new/butter narmada machine/1mini.jpg" 
+                                     class="xzoom5 img-fluid" 
+                                     xoriginal="./btitex-machine-new/butter narmada machine/1.jpg"
+                                     alt="Butter Narmada Machine">
+                                <div class="xzoom-thumbs mt-3 d-flex justify-content-center flex-wrap gap-2">
+                                    <a href="./btitex-machine-new/butter narmada machine/1.jpg">
+                                        <img class="xzoom-gallery5" width="60" src="./btitex-machine-new/butter narmada machine/1mini.jpg" xpreview="./btitex-machine-new/butter narmada machine/1mini.jpg" alt="Thumbnail 1">
+                                    </a>
+                                    <a href="./btitex-machine-new/butter narmada machine/2.jpg">
+                                        <img class="xzoom-gallery5" width="60" src="./btitex-machine-new/butter narmada machine/2mini.jpg" alt="Thumbnail 2">
+                                    </a>
+                                    <a href="./btitex-machine-new/butter narmada machine/3.jpg">
+                                        <img class="xzoom-gallery5" width="60" src="./btitex-machine-new/butter narmada machine/3mini.jpg" alt="Thumbnail 3">
+                                    </a>
+                                    <a href="./btitex-machine-new/butter narmada machine/4.jpg">
+                                        <img class="xzoom-gallery5" width="60" src="./btitex-machine-new/butter narmada machine/4mini.jpg" alt="Thumbnail 4">
+                                    </a>
+                                    <a href="./btitex-machine-new/butter narmada machine/5.jpg">
+                                        <img class="xzoom-gallery5" width="60" src="./btitex-machine-new/butter narmada machine/5mini.jpg" alt="Thumbnail 5">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <span class="product-badge">Smooth Operation</span>
+                                <h2>Butter Narmada Type Machine</h2>
+                                <div class="product-specs">
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Smooth Running</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Low Noise</span>
+                                    <span class="spec-tag"><i class="fas fa-check-circle me-1"></i>Easy Use</span>
+                                </div>
+                                <div class="price">&#x20B9; 75,000 <span class="currency">/ Unit</span></div>
+                                <div class="product-cta">
+                                    <a href="https://wa.me/+919978931555?text=I'm%20interested%20in%20Butter%20Narmada%20Machine" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>Get Quote on WhatsApp</span>
+                                    </a>
+                                    <a href="home.html" class="btn-view-details">
+                                        <i class="fas fa-home"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-8 mb-4 mb-md-0">
+                    <h3 class="text-white mb-2">Need Help Choosing the Right Machine?</h3>
+                    <p class="text-white-50 mb-0">Our experts are ready to assist you with your requirements. Contact us today!</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="https://wa.me/+919978931555" target="_blank" class="btn-whatsapp-modern">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Contact Us Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-md-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4">
+                    <h3>About Us</h3>
+                    <p class="small text-white-50">Established in 1979, BTI Tex Private Limited is a leading manufacturer, supplier, and importer of Power Loom, Rapier Loom, Water Jet Loom Machines, and more.</p>
+                    <a href="aboutus.html" class="btn btn-sm btn-outline-light">Read More</a>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="aboutus.html" class="text-white-50 text-decoration-none hover-primary">About Us</a></li>
+                        <li class="mb-2"><a href="product.html" class="text-white-50 text-decoration-none hover-primary">Products</a></li>
+                        <li class="mb-2"><a href="valve.html" class="text-white-50 text-decoration-none hover-primary">Valve</a></li>
+                        <li class="mb-2"><a href="home.html#services" class="text-white-50 text-decoration-none hover-primary">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 text-center text-md-end">
+                    <h3>Connect With Us</h3>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
+                        <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://wa.me/+919978931555" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-white-50 small mb-1"><i class="fas fa-phone me-2"></i>+91 997 893 1555</p>
+                        <p class="text-white-50 small mb-0"><i class="fas fa-envelope me-2"></i>bti1979@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center small text-white-50">
+            Copyright &copy; 2026. All rights reserved by <a href="home.html" class="text-white">BTI TEX PVT.LTD</a>
         </div>
     </footer>
-    <footer class="copyright">
-        <div>
-            Copyright &copy 2020. All rights reserved by <a href="#">BTI TEX PVT.LTD</a>, Developed by &Kopf;&sup2 Infotech &#128150;
-        </div>
 
-    </footer>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/zoom.js"></script>
     <script src="./js/script.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100
+        });
+    </script>
+
+    <!-- Enhanced Zoom & Image Gallery Effects -->
+    <script>
+        $(document).ready(function() {
+            // Enhanced xzoom configuration for each product
+            var zoomConfig = {
+                zoomWidth: 450,
+                zoomHeight: 350,
+                tint: '#1a1f2e',
+                tintOpacity: 0.6,
+                Xoffset: 20,
+                fadeIn: true,
+                fadeOut: true,
+                fadeTrans: true,
+                smooth: true,
+                smoothZoomMove: 2,
+                smoothLensMove: 2,
+                lensShape: 'box',
+                hover: true,
+                adaptive: true,
+                position: 'right',
+                mposition: 'inside'
+            };
+
+            // Initialize xzoom for all products
+            $(".xzoom, .xzoom-gallery").xzoom(zoomConfig);
+            $(".xzoom1, .xzoom-gallery1").xzoom(zoomConfig);
+            $(".xzoom2, .xzoom-gallery2").xzoom(zoomConfig);
+            $(".xzoom3, .xzoom-gallery3").xzoom(zoomConfig);
+            $(".xzoom4, .xzoom-gallery4").xzoom(zoomConfig);
+            $(".xzoom5, .xzoom-gallery5").xzoom(zoomConfig);
+            $(".xzoom6, .xzoom-gallery6").xzoom(zoomConfig);
+
+            // Enhanced thumbnail hover effect with image swap
+            $('.xzoom-thumbs a').on('mouseenter click', function(e) {
+                var $this = $(this);
+                var $container = $this.closest('.xzoom-container');
+                var $mainImg = $container.find('img[class^="xzoom"]').first();
+                var newSrc = $this.attr('href');
+                var thumbSrc = $this.find('img').attr('src');
+                
+                // Add active class to clicked thumbnail
+                $container.find('.xzoom-thumbs img').removeClass('active');
+                $this.find('img').addClass('active');
+                
+                // Smooth image transition effect
+                if ($mainImg.length && thumbSrc) {
+                    $mainImg.css({
+                        'opacity': '0',
+                        'transform': 'scale(0.95)'
+                    });
+                    
+                    setTimeout(function() {
+                        $mainImg.attr('src', thumbSrc);
+                        $mainImg.attr('xoriginal', newSrc);
+                        $mainImg.css({
+                            'opacity': '1',
+                            'transform': 'scale(1)'
+                        });
+                    }, 200);
+                }
+            });
+
+            // Add transition styles to main images
+            $('img[class^="xzoom"]').css({
+                'transition': 'opacity 0.3s ease, transform 0.3s ease'
+            });
+
+            // Set first thumbnail as active on load
+            $('.xzoom-thumbs').each(function() {
+                $(this).find('img').first().addClass('active');
+            });
+        });
+
+        // Product Filter with jQuery (enhanced)
+        $(document).ready(function() {
+            $(".filter-btn").click(function() {
+                var value = $(this).attr('data-filter');
+                
+                // Active Class Toggle
+                $(".filter-btn").removeClass("active");
+                $(this).addClass("active");
+
+                if(value == "all") {
+                    $(".product-item").fadeIn(500);
+                } else {
+                    $(".product-item").not("." + value).fadeOut(300);
+                    $(".product-item").filter("." + value).fadeIn(500);
+                }
+                
+                // Refresh AOS animations after filter
+                setTimeout(function(){ 
+                    AOS.refresh(); 
+                }, 600);
+            });
+        });
+    </script>
+
+    <!-- Icon Circle Styling -->
+    <style>
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary) 0%, #5bc0de 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(48, 144, 199, 0.3);
+        }
+        
+        .hover-primary:hover {
+            color: var(--primary) !important;
+        }
+    </style>
 </body>
 </html>

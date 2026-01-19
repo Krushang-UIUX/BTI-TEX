@@ -40,4 +40,27 @@ $(function(){
         tint: "#333",
         Xoffset: 15,
     });
+
+    /* =========================================
+       Filter Logic
+       ========================================= */
+    $(".filter-btn").click(function() {
+        var value = $(this).attr('data-filter');
+        
+        // Active Class Toggle
+        $(".filter-btn").removeClass("active");
+        $(this).addClass("active");
+
+        if(value == "all") {
+            $(".product-item").fadeIn('1000');
+        } else {
+            $(".product-item").not("."+value).hide('3000');
+            $(".product-item").filter("."+value).fadeIn('3000');
+        }
+        
+        // Fix for AOS animations not triggering after filter
+        setTimeout(function(){ 
+             AOS.refresh(); 
+        }, 500);
+    });
 });

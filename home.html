@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BTI TEX PVT.LTD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/home-modern.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/js/app.js"></script>
+</head>
+<body oncontextmenu="return false;">
+    <script>
+        $("body").on("contextmenu",function(e){
+            return false;
+           });
+         
+           $('body').bind('cut copy paste',function(e){
+            e.preventDefault();
+           });
+    </script>
+    
+    <!-- Topbar -->
+    <header class="topbar bg-dark py-4 d-flex align-items-center">
+        <div class="container d-flex justify-content-between align-items-center text-white small">
+            <div class="icons d-flex gap-2">
+                <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank"
+                            class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank"
+                            class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                        <a href="https://wa.me/+919978931555" target="_blank" class="text-white"><i
+                                class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+            </div>
+            <div class="auth d-flex align-items-center">
+                
+                <div class="d-flex align-items-center">
+                    <img src="./icons/cart.svg" alt="" class="me-2" style="height:15px;">
+                    <span>GST No. 24AACCB5856C1ZZ</span>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Info Section with Gear Pattern -->
+    <section class="py-4 position-relative gear-background">
+        <div class="container">
+            <div class="row align-items-center">
+                 <!-- Left: Phone Info -->
+                 <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start">
+                     <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt=""> <!-- Large Icon -->
+                     <div>
+                         <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
+                         <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
+                         <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
+                     </div>
+                 </div>
+                 
+                 <!-- Center: Logo -->
+                 <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center">
+                     <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI LOGO">
+                 </div>
+                 
+                 <!-- Right: Hours Info -->
+                 <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end">
+                     <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt=""> <!-- Large Icon -->
+                     <div class="order-md-1 me-md-3">
+                         <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
+                         <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
+        <div class="container">
+             <button class="navbar-toggler mx-auto my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                 <ul class="navbar-nav">
+                     <li class="nav-item"><a class="nav-link active px-4 py-3" style="background-color: #3090c7;" href="home.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="aboutus.html">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="product.html">Products</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="valve.html">Valve</a></li> 
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="#services">Services</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="#contact">Contact Us</a></li>
+                 </ul>
+             </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section - Modern Design -->
+    <section class="hero-modern">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12 order-lg-1 order-2">
+                    <div class="hero-content">
+                        <div class="hero-badge" data-aos="fade-up">
+                            <span>Since 1979 • 45+ Years of Excellence</span>
+                        </div>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                            Welcome to <br><span class="text-gradient">BTI TEX Pvt. LTD.</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="150">
+                            Ahmedabad's Leading Manufacturer, Supplier & Importer
+                        </p>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                            Established in 1979, we "BTI Tex Private Limited" are leading Manufacturer, Supplier and Importer of Power Loom, Rapier Loom, Water Jet Loom Machines. We deliver excellence through quality products and transparent business practices.
+                        </p>
+                        <button class="btn-modern" onclick="window.location.href='/aboutus.html'" data-aos="fade-up" data-aos-delay="250">
+                            <span>Discover More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 order-lg-2 order-1">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image-container" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="./btitex/Japan.png" alt="Japan Machine" class="hero-image">
+                        </div>
+                        <!-- Floating Badges -->
+                        <div class="hero-float-badge badge-1" data-aos="fade-left" data-aos-delay="500">
+                            <div class="badge-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-value">1,75,256+</span>
+                                <span class="badge-label">Machines Delivered</span>
+                            </div>
+                        </div>
+                        <div class="hero-float-badge badge-2" data-aos="fade-right" data-aos-delay="600">
+                            <div class="badge-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="badge-text">
+                                <span class="badge-value">Premium</span>
+                                <span class="badge-label">Quality Assured</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Products Section -->
+    <!-- Top Products Section - Modern Design -->
+    <section class="products-modern">
+        <div class="container">
+            <div class="section-header-modern" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-cog"></i> Our Products
+                </span>
+                <h2 class="section-title-modern">Top Quality Machines</h2>
+                <p class="section-subtitle-modern">Discover our premium range of power looms and textile machinery trusted by thousands of manufacturers</p>
+            </div>
+            
+            <!-- Products Slider -->
+            <div class="position-relative" data-aos="fade-up" data-aos-delay="100">
+                <button class="slider-btn-modern prev-btn d-none d-md-flex" style="z-index: 10;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn-modern next-btn d-none d-md-flex" style="z-index: 10;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="machine-slider" id="slick-slider">
+                    <!-- Card 1 -->
+                    <div class="product-card-modern">
+                        <div class="product-image-wrapper">
+                            <span class="product-badge">Popular</span>
+                            <img src="/btitex-machine-new/Venkateshwar machine/2mini.jpg" alt="Venkateshwar Type Machine">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Venkateshwar Type Machine</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">₹1,00,000 <span>/Unit</span></div>
+                            <button class="btn-product" onclick="window.location.href='/product.html#wploommachine'">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="product-card-modern">
+                        <div class="product-image-wrapper">
+                            <span class="product-badge">Best Value</span>
+                            <img src="./btitex-machine-new/chau maru machine/4mini.jpg" alt="Overpick Range Machine">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Overpick Range Type Machine</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">₹50,000 <span>/Unit</span></div>
+                            <button class="btn-product" onclick="window.location.href='/product.html#machine2'">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="product-card-modern">
+                        <div class="product-image-wrapper">
+                            <img src="/btitex-machine-new/machine3/1mini.jpg" alt="Super 2x1 Machine">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Super 2x1 Machine</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">₹85,000 <span>/Unit</span></div>
+                            <button class="btn-product" onclick="window.location.href='/product.html#machine3'">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="product-card-modern">
+                        <div class="product-image-wrapper">
+                            <span class="product-badge">Premium</span>
+                            <img src="/btitex-machine-new/Ganga Machine/1mini.jpg" alt="Ganga Type Machine">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Ganga Type Machine</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">₹1,10,000 <span>/Unit</span></div>
+                            <button class="btn-product" onclick="window.location.href='/product.html#gangamachine'">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="product-card-modern">
+                        <div class="product-image-wrapper">
+                            <span class="product-badge">Top Rated</span>
+                            <img src="/btitex-machine-new/Sumo Machine/1mini.jpg" alt="Sumo Range Machine">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Sumo Range Machine</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="product-price">₹1,50,000 <span>/Unit</span></div>
+                            <button class="btn-product" onclick="window.location.href='/product.html#sumomachine'">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="product-card-modern">
+                        <div class="product-image-wrapper">
+                            <img src="/btitex-machine-new/Under Pick Machine/3mini.jpg" alt="Super Wider Width Machine">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Super Wider Width Machine</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">₹95,000 <span>/Unit</span></div>
+                            <button class="btn-product" onclick="window.location.href='/product.html#uppowerloommachine'">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="product-card-modern">
+                        <div class="product-image-wrapper">
+                            <img src="/btitex-machine-new/butter narmada machine/1mini.jpg" alt="Butter Narmada Machine">
+                        </div>
+                        <div class="product-info">
+                            <h4 class="product-name">Butter Narmada Type Machine</h4>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="product-price">₹75,000 <span>/Unit</span></div>
+                            <button class="btn-product" onclick="window.location.href='/product.html#butternarmada'">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+                <button class="btn-view-more" onclick="window.location.href='/product.html'">
+                    <span>View All Products</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- About Section - Modern Design -->
+    <section class="about-modern">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="about-image-side">
+                        <div class="about-image-container">
+                            <img src="./btitex/bti front.jpg" class="img-fluid" alt="BTI TEX Factory">
+                        </div>
+                        <div class="experience-badge" data-aos="zoom-in" data-aos-delay="300">
+                            <span class="number">45+</span>
+                            <span class="text">Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content-side">
+                        <span class="about-tag">
+                            <i class="fas fa-info-circle"></i> About Us
+                        </span>
+                        <h2 class="about-title">
+                            <span class="highlight">BTI TEX PVT.LTD</span> is the Most Trusted Company Since 1979
+                        </h2>
+                        <p class="about-description">
+                            Established in 1979, we "BTI Tex Private Limited" are the leading Manufacturer, Supplier and Importer of an extensive array of Power Loom, Rapier Loom, Water Jet Loom Machines. We deliver excellence through quality products and transparent business practices.
+                        </p>
+                        <p class="about-description">
+                            Our mentor Mr. Zubair Shaikh's continuous guidance has been instrumental in our exponential growth in the textile machinery market.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Premium Quality</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Expert Support</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Trusted Since 1979</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>ISO Certified</span>
+                            </div>
+                        </div>
+                        <button class="btn-modern" onclick="window.location.href='/aboutus.html'">
+                            <span>Learn More About Us</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services Section - Modern Design -->
+    <section class="services-modern" id="services">
+        <div class="container">
+            <div class="section-header-modern" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-cogs"></i> What We Do
+                </span>
+                <h2 class="section-title-modern">Our Services</h2>
+                <p class="section-subtitle-modern">We provide comprehensive solutions for all your textile machinery needs</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-modern">
+                        <div class="service-icon-wrapper">
+                            <img src="./icons/import.svg" alt="Importer">
+                        </div>
+                        <h3 class="service-title">Importer</h3>
+                        <p class="service-description">We import high-quality textile machinery and components from leading global manufacturers, ensuring you get the best equipment at competitive prices.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-modern">
+                        <div class="service-icon-wrapper">
+                            <img src="./icons/manufacturing.svg" alt="Manufacturer">
+                        </div>
+                        <h3 class="service-title text-gradient">Manufacturer</h3>
+                        <p class="service-description">Our state-of-the-art manufacturing facility produces premium quality power looms and textile machinery with precision engineering and durability.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-modern">
+                        <div class="service-icon-wrapper">
+                            <img src="./icons/hotel-supplier.svg" alt="Supplier">
+                        </div>
+                        <h3 class="service-title">Supplier</h3>
+                        <p class="service-description">We are trusted suppliers of textile machinery across India, providing timely delivery, excellent after-sales support, and genuine spare parts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big Deal -->
+    <!-- Stats Section - Modern Design -->
+    <section class="stats-modern">
+        <div class="stats-pattern"></div>
+        <div class="container">
+            <div class="stats-header" data-aos="fade-up">
+                <h2 class="stats-title">Power Looms Delivered Till Now!</h2>
+            </div>
+            <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-5 col-md-8">
+                    <div class="stats-card">
+                        <div class="stats-number">1,75,256+</div>
+                        <div class="stats-label">Updated on 20th Dec 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Us -->
+    <!-- Contact Section - Modern Design -->
+    <section class="contact-modern" id="contact">
+        <div class="container">
+            <div class="section-header-modern" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </span>
+                <h2 class="section-title-modern">Contact Us</h2>
+                <p class="section-subtitle-modern">Have questions? We'd love to hear from you. Reach out to us anytime.</p>
+            </div>
+            
+            <div class="row align-items-stretch g-4">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="./icons/phone-2.svg" alt="Phone">
+                            </div>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <a href="tel:+919978931555">+91 997 893 1555</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="./icons/email.svg" alt="Email">
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <a href="mailto:bti1979@gmail.com">bti1979@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="./icons/clock.svg" alt="Hours">
+                            </div>
+                            <div class="contact-text">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat (10:00 AM - 5:00 PM)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.244997374015!2d72.6332727149191!3d23.014774984956965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e866656e14573%3A0x2783d164dd409bed!2sBTI%20Tex%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1609390924255!5m2!1sen!2sin" 
+                        allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-8 mb-4 mb-md-0">
+                    <h3 class="text-white mb-2">Need Help Choosing the Right Machine?</h3>
+                    <p class="text-white-50 mb-0">Our experts are ready to assist you with your requirements. Contact us today!</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="https://wa.me/+919978931555" target="_blank" class="btn-whatsapp-modern">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Contact Us Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-md-5 pb-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4">
+                    <h3>About Us</h3>
+                    <p class="small text-white-50">Established in 1979, BTI Tex Private Limited is a leading manufacturer, supplier, and importer of Power Loom, Rapier Loom, Water Jet Loom Machines, and more.</p>
+                    <a href="aboutus.html" class="btn btn-sm btn-outline-light">Read More</a>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="aboutus.html" class="text-white-50 text-decoration-none hover-primary">About Us</a></li>
+                        <li class="mb-2"><a href="product.html" class="text-white-50 text-decoration-none hover-primary">Products</a></li>
+                        <li class="mb-2"><a href="valve.html" class="text-white-50 text-decoration-none hover-primary">Valve</a></li>
+                        <li class="mb-2"><a href="home.html#services" class="text-white-50 text-decoration-none hover-primary">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 text-center text-md-end">
+                    <h3>Connect With Us</h3>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-3">
+                        <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="https://wa.me/+919978931555" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white fs-4">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-white-50 small mb-1"><i class="fas fa-phone me-2"></i>+91 997 893 1555</p>
+                        <p class="text-white-50 small mb-0"><i class="fas fa-envelope me-2"></i>bti1979@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center small text-white-50">
+            Copyright &copy; 2026. All rights reserved by <a href="home.html" class="text-white">BTI TEX PVT.LTD</a>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>

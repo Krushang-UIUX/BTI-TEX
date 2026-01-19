@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>BTI TEX PVT.LTD</title>
-    <meta name="description" content="">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Valve Products - BTI TEX PVT.LTD</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS CSS -->
@@ -16,27 +12,25 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/responsive.css">
-
+    <link rel="stylesheet" href="./CSS/prodres.css">
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/app.js"></script>
 </head>
-
 <body oncontextmenu="return false;">
     <script>
-        $("body").on("contextmenu", function (e) {
+        $("body").on("contextmenu",function(e){
             return false;
-        });
-
-        $('body').bind('cut copy paste', function (e) {
+           });
+         
+           $('body').bind('cut copy paste',function(e){
             e.preventDefault();
-        });
+           });
     </script>
-
+    
     <!-- Topbar -->
     <header class="topbar bg-dark py-4 d-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center text-white small">
@@ -64,104 +58,87 @@
     <section class="py-4 position-relative gear-background">
         <div class="container">
             <div class="row align-items-center">
-                <!-- Left: Phone Info -->
-                <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start" data-aos="fade-right">
-                    <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt="">
-                    <!-- Large Icon -->
-                    <div>
-                        <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
-                        <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
-                        <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
-                    </div>
-                </div>
-
-                <!-- Center: Logo -->
-                <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center" data-aos="zoom-in" data-aos-delay="200">
-                    <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI LOGO">
-                </div>
-
-                <!-- Right: Hours Info -->
-                <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end" data-aos="fade-left">
-                    <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt="">
-                    <!-- Large Icon -->
-                    <div class="order-md-1 me-md-3">
-                        <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
-                        <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
-                    </div>
-                </div>
+                 <!-- Left: Phone Info -->
+                 <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start">
+                     <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt=""> <!-- Large Icon -->
+                     <div>
+                         <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
+                         <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
+                         <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
+                     </div>
+                 </div>
+                 
+                 <!-- Center: Logo -->
+                 <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center">
+                     <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI LOGO">
+                 </div>
+                 
+                 <!-- Right: Hours Info -->
+                 <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end">
+                     <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt=""> <!-- Large Icon -->
+                     <div class="order-md-1 me-md-3">
+                         <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
+                         <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
+                     </div>
+                 </div>
             </div>
         </div>
     </section>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0" data-aos="fade-down" data-aos-delay="300">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
         <div class="container">
-            <button class="navbar-toggler mx-auto my-2" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="product.html">Products</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="valve.html">Valve</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate"
-                            href="home.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#contact">Contact
-                            Us</a></li>
-                </ul>
-            </div>
+             <button class="navbar-toggler mx-auto my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                 <ul class="navbar-nav">
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="aboutus.html">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="product.html">Products</a></li>
+                     <li class="nav-item"><a class="nav-link active px-4 py-3" style="background-color: #3090c7;" href="valve.html">Valve</a></li> 
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#services">Services</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#contact">Contact Us</a></li>
+                 </ul>
+             </div>
         </div>
     </nav>
 
-    <!-- Main Navigation Area -->
-    <div class="circle-nav-container">
-
-        <!-- Home Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
-            <div class="nav-circle circle-home" title="Visit Home Page">
-                <a href="home.html">
-                    <i class="fas fa-home home-icon"></i>
-                </a>
+    <div class="container mt-5" data-aos="fade-up">
+        <h1 class="section-heading text-center mb-5">Valve Products</h1>
+        <div class="row">
+            <!-- Placeholder Content for Valves -->
+            <div class="col-md-4 mb-4" data-aos="zoom-in">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x300?text=Valve+1" class="card-img-top" alt="Valve 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Industrial Valve Type A</h5>
+                        <p class="card-text">High quality industrial valve suitable for various applications.</p>
+                        <a href="https://wa.me/+919978931555" target="_blank" class="btn btn-whatsapp w-100">Enquire Now</a>
+                    </div>
+                </div>
             </div>
-            <h5 class="mt-3 fw-bold">Home Page</h5>
-        </div>
-
-        <!-- Machine 1 Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
-            <div class="nav-circle circle-img" title="View Products">
-                <a href="product.html">
-                    <img src="./btitex-machine-new/Venkateshwar machine/1mini.jpg" alt="Textile Machine">
-                </a>
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x300?text=Valve+2" class="card-img-top" alt="Valve 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Industrial Valve Type B</h5>
+                        <p class="card-text">Durable and reliable valve designed for high pressure environments.</p>
+                        <a href="https://wa.me/+919978931555" target="_blank" class="btn btn-whatsapp w-100">Enquire Now</a>
+                    </div>
+                </div>
             </div>
-            <h5 class="mt-3 fw-bold">Venkateshwar Machine</h5>
-        </div>
-
-        <!-- Machine 2 Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="500">
-            <div class="nav-circle circle-img" title="View Products">
-                <a href="product.html#machine3">
-                    <img src="./btitex-machine-new/machine3/1mini.jpg" alt="Textile Machine">
-                </a>
+            <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://placehold.co/400x300?text=Valve+3" class="card-img-top" alt="Valve 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Industrial Valve Type C</h5>
+                        <p class="card-text">Precision engineered valve for specific industrial needs.</p>
+                        <a href="https://wa.me/+919978931555" target="_blank" class="btn btn-whatsapp w-100">Enquire Now</a>
+                    </div>
+                </div>
             </div>
-            <h5 class="mt-3 fw-bold">Super 2x1 Machine</h5>
         </div>
-
-        <!-- Valve / Coming Soon Circle -->
-        <div class="text-center" data-aos="zoom-in" data-aos-delay="700">
-            <div class="nav-circle circle-coming-soon" title="Valve Products">
-                <a href="valve.html" class="text-decoration-none">
-                    <div class="coming-soon-text">VALVE</div>
-                    <div class="small fw-bold text-dark mt-2">COMING SOON</div>
-                </a>
-            </div>
-            <h5 class="mt-3 fw-bold">Valve Products</h5>
-        </div>
-
     </div>
 
     <!-- Call to Action Section -->
@@ -234,11 +211,7 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
+        AOS.init();
     </script>
 </body>
-
 </html>
