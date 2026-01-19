@@ -291,11 +291,11 @@
     background: linear-gradient(135deg, var(--primary) 0%, #5bc0de 100%);
     color: #fff;
     font-size: 0.75rem;
+    width: fit-content;
     font-family: "Raleway-semibold";
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 1rem;
 }
 
 .product-details h3 {
@@ -333,7 +333,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: .8rem;
 }
 
 .spec-tag {

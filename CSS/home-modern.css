@@ -43,7 +43,7 @@
 .hero-modern {
     position: relative;
     min-height: 85vh;
-    background: var(--gradient-hero);
+    /* background: var(--gradient-hero); */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -490,6 +490,7 @@
     background: var(--gradient-accent);
     color: white;
     padding: 0.35rem 0.75rem;
+    width: fit-content;
     border-radius: 100px;
     font-size: 0.75rem;
     font-weight: 600;
@@ -782,7 +783,7 @@
 .services-modern {
     position: relative;
     padding: var(--section-padding) 0;
-    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    /* background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%); */
     overflow: hidden;
 }
 
@@ -952,7 +953,7 @@
 .contact-modern {
     position: relative;
     padding: var(--section-padding) 0;
-    background: #ffffff;
+    /* background: #ffffff; */
     overflow: hidden;
 }
 
