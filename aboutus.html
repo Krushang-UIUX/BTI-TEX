@@ -21,7 +21,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/theme-toggle.js" defer></script>
     <script src="js/disablekey.js"></script>
 </head>
 
@@ -37,24 +38,24 @@
     </script>
 
     <!-- Topbar -->
-    <header class="topbar bg-dark py-4 d-flex align-items-center">
+    <header class="topbar py-4 d-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center text-white small">
             <div class="icons d-flex gap-2">
                 <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank"
-                    class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
-                <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank"
-                    class="text-white"><i class="fab fa-google fa-lg"></i></a>
-                <a href="https://wa.me/+919978931555" target="_blank" class="text-white"><i
-                        class="fab fa-whatsapp fa-lg"></i></a>
-                <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white"><i
-                        class="fab fa-youtube fa-lg"></i></a>
+                            class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank"
+                            class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                        <a href="https://wa.me/+919978931555" target="_blank" class="text-white"><i
+                                class="fab fa-whatsapp fa-lg"></i></a>
+                        <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
             </div>
             <div class="auth d-flex align-items-center">
+                
                 <div class="d-flex align-items-center">
-                    <img src="./icons/cart.svg" alt="" class="me-2" style="height:15px;">
+                    <i class="fas fa-file-invoice me-2"></i>
                     <span>GST No. 24AACCB5856C1ZZ</span>
                 </div>
-
+                
             </div>
         </div>
     </header>
@@ -64,27 +65,23 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left: Phone Info -->
-                <div
-                    class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start">
+                <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start" data-aos="fade-right">
                     <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt="">
                     <!-- Large Icon -->
                     <div>
                         <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
-                        <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555"
-                                class="text-decoration-none text-muted">+91 997 893 1555</a></p>
-                        <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com"
-                                class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
+                        <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
+                        <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
                     </div>
                 </div>
 
                 <!-- Center: Logo -->
-                <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center">
+                <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center" data-aos="zoom-in" data-aos-delay="200">
                     <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI LOGO">
                 </div>
 
                 <!-- Right: Hours Info -->
-                <div
-                    class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end">
+                <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end" data-aos="fade-left">
                     <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt="">
                     <!-- Large Icon -->
                     <div class="order-md-1 me-md-3">
@@ -100,26 +97,21 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
         <div class="container">
             <p class="d-lg-none d-flex align-baseline text-white mb-0">
-                Menu
+                Menu    
             </p>
-            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse py-lg-2" id="mainNavbar">
-                <ul class="navbar-nav justify-content-around w-100">
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active px-4 py-3" style="background-color: #3090c7;"
-                            href="aboutus.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="product.html">Products</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="valve.html">Valve</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate"
-                            href="home.html#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#contact">Contact
-                            Us</a></li>
-                </ul>
-            </div>
+             <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse py-lg-2" id="mainNavbar">
+                 <ul class="navbar-nav justify-content-around w-100">
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
+                     <li class="nav-item"><a class="nav-link active px-4 py-3 nav-link-custom-active" href="aboutus.html">About Us</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="product.html">Products</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="valve.html">Valve</a></li> 
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#services">Services</a></li>
+                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#contact">Contact Us</a></li>
+                 </ul>
+             </div>
         </div>
     </nav>
 
@@ -225,7 +217,7 @@
                     </ul>
                 </div>
                 <div class="infra-image" data-aos="fade-left">
-                    <img src="./btitex/btimain.png" alt="BTI TEX Infrastructure">
+                    <img src="./btitex/btimain.jpg" alt="BTI TEX Infrastructure" class="floating-advanced">
                 </div>
             </div>
         </div>
@@ -236,7 +228,7 @@
         <div class="container">
             <div class="why-us-grid">
                 <div class="why-image-wrapper" data-aos="fade-right">
-                    <img src="./btitex/why.png" alt="Why Choose Us" class="floating">
+                    <img src="./btitex/why_new.png" alt="Why Choose Us" class="floating-advanced">
                 </div>
                 <div class="why-content" data-aos="fade-left">
                     <div class="d-flex gap-3 flex-column flex-wrap">
@@ -316,8 +308,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-image" data-aos="fade-left">
-                    <img src="./btitex/vector.png" alt="Product Portfolio" class="floating">
+                <div class="infra-image" data-aos="fade-left">
+                    <img src="./btitex/infrastructure_new.png" alt="BTI TEX Infrastructure" class="floating-advanced">
                 </div>
             </div>
         </div>
@@ -454,7 +446,7 @@
         </div>
         <hr class="border-secondary">
         <div class="text-center small text-white-50">
-            Copyright &copy; 2026. All rights reserved by <a href="index.html" class="text-white">BTI TEX PVT.LTD</a> 
+            Copyright &copy; 2026. All rights reserved by <a href="index.html" class="text-white">BTI TEX PVT.LTD</a>
         </div>
     </footer>
 

@@ -7,11 +7,11 @@
 :root {
     --product-gradient-start: #667eea;
     --product-gradient-end: #764ba2;
-    --card-bg: rgba(255, 255, 255, 0.95);
-    --glass-bg: rgba(255, 255, 255, 0.25);
-    --glass-border: rgba(255, 255, 255, 0.18);
+    --card-bg: var(--card-bg);
+    --glass-bg: var(--card-bg);
+    --glass-border: var(--border-color);
     --shadow-color: rgba(0, 0, 0, 0.1);
-    --shadow-hover: rgba(48, 144, 199, 0.3);
+    --shadow-hover: var(--card-shadow);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -106,18 +106,6 @@
     border-radius: 2px;
 }
 
-.section-title-modern h2::before {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 4px;
-    background: var(--primary);
-    border-radius: 2px;
-    animation: pulse-line 2s ease-in-out infinite;
-}
 
 @keyframes pulse-line {
     0%, 100% { width: 40px; opacity: 1; }
@@ -141,8 +129,8 @@
     padding: 0.75rem 1.5rem;
     border: 2px solid transparent;
     border-radius: 50px;
-    background: var(--heaven);
-    color: var(--secondary);
+    background: var(--card-bg);
+    color: var(--text-color);
     font-family: "Raleway-semibold";
     font-size: 0.9rem;
     cursor: pointer;
@@ -235,7 +223,7 @@
 .product-image-container {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    background: var(--bg-color);
     padding: 1.5rem;
 }
 
@@ -301,7 +289,7 @@
 .product-details h3 {
     font-family: "Raleway-bold";
     font-size: 1.5rem;
-    color: var(--secondary);
+    color: var(--text-color);
     margin-bottom: 0.5rem;
     transition: color 0.3s ease;
 }

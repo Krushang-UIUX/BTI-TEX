@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valve Products - BTI TEX PVT.LTD</title>
+    <title>Premium Valves - BTI TEX PVT.LTD</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/prodres.css">
+    <link rel="stylesheet" href="./CSS/valve-modern.css">
     
+    <!-- Scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="./js/premium-fx.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/theme-toggle.js" defer></script>
 </head>
-<body oncontextmenu="return false;">
-    <script>
-        $("body").on("contextmenu",function(e){
-            return false;
-           });
-         
-           $('body').bind('cut copy paste',function(e){
-            e.preventDefault();
-           });
-    </script>
-    
+<body>
+
+
     <!-- Topbar -->
-    <header class="topbar bg-dark py-4 d-flex align-items-center">
+    <header class="topbar py-4 d-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center text-white small">
             <div class="icons d-flex gap-2">
                 <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank"
@@ -44,9 +37,8 @@
                         <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
             </div>
             <div class="auth d-flex align-items-center">
-                
                 <div class="d-flex align-items-center">
-                    <img src="./icons/cart.svg" alt="" class="me-2" style="height:15px;">
+                    <i class="fas fa-file-invoice me-2"></i>
                     <span>GST No. 24AACCB5856C1ZZ</span>
                 </div>
                 
@@ -58,29 +50,31 @@
     <section class="py-4 position-relative gear-background">
         <div class="container">
             <div class="row align-items-center">
-                 <!-- Left: Phone Info -->
-                 <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start">
-                     <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt=""> <!-- Large Icon -->
-                     <div>
-                         <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
-                         <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
-                         <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
-                     </div>
-                 </div>
-                 
-                 <!-- Center: Logo -->
-                 <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center">
-                     <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI LOGO">
-                 </div>
-                 
-                 <!-- Right: Hours Info -->
-                 <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end">
-                     <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt=""> <!-- Large Icon -->
-                     <div class="order-md-1 me-md-3">
-                         <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
-                         <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
-                     </div>
-                 </div>
+                <!-- Left: Phone Info -->
+                <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start" data-aos="fade-right">
+                    <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt="">
+                    <!-- Large Icon -->
+                    <div>
+                        <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
+                        <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
+                        <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Center: Logo -->
+                <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI LOGO">
+                </div>
+
+                <!-- Right: Hours Info -->
+                <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end" data-aos="fade-left">
+                    <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt="">
+                    <!-- Large Icon -->
+                    <div class="order-md-1 me-md-3">
+                        <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
+                        <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -99,7 +93,7 @@
                      <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
                      <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="aboutus.html">About Us</a></li>
                      <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="product.html">Products</a></li>
-                     <li class="nav-item"><a class="nav-link active px-4 py-3" style="background-color: #3090c7;" href="valve.html">Valve</a></li> 
+                     <li class="nav-item"><a class="nav-link active px-4 py-3 nav-link-custom-active" href="valve.html">Valve</a></li> 
                      <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#services">Services</a></li>
                      <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#contact">Contact Us</a></li>
                  </ul>
@@ -107,55 +101,79 @@
         </div>
     </nav>
 
-    <div class="container mt-5" data-aos="fade-up">
-        <h1 class="section-heading text-center mb-5">Valve Products</h1>
-        <div class="row">
-            <!-- Placeholder Content for Valves -->
-            <div class="col-md-4 mb-md-4 mb-3" data-aos="zoom-in">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://placehold.co/400x300?text=Valve+1" class="card-img-top" alt="Valve 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Industrial Valve Type A</h5>
-                        <p class="card-text">High quality industrial valve suitable for various applications.</p>
-                        <a href="https://wa.me/+919978931555" target="_blank" class="btn btn-whatsapp w-100">Enquire Now</a>
+    <!-- Immersive Cyber-Industrial Hero Section -->
+    <div class="valve-hero-wrapper immersive-hero">
+        <div class="hero-glow-blob"></div>
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <!-- Text Content -->
+                <div class="col-lg-7 hero-text-col" data-aos="fade-right">
+                    <div class="hero-badge-modern">
+                        <i class="fas fa-industry"></i>
+                        <span>ENGINEERING THE FUTURE</span>
+                    </div>
+                    <h1 class="hero-title kinetic-text">Precision Flow<br><span class="text-accent">Control Systems</span></h1>
+                    <p class="hero-description glass-text">
+                        Industry-leading valve solutions engineered for extreme environments. Certified to API 600, 6D & ISO standards. 
+                    </p>
+                    <div class="hero-actions-group">
+                        <a href="./bti_valves/pdf/BTI Tex Valve Catalogue-1.pdf" target="_blank" class="btn-cyber-primary magnetic">
+                            <span class="btn-line"></span>
+                            <span class="btn-text">EXPLORE CATALOG</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-md-4 mb-3" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://placehold.co/400x300?text=Valve+2" class="card-img-top" alt="Valve 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Industrial Valve Type B</h5>
-                        <p class="card-text">Durable and reliable valve designed for high pressure environments.</p>
-                        <a href="https://wa.me/+919978931555" target="_blank" class="btn btn-whatsapp w-100">Enquire Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-md-4 mb-3" data-aos="zoom-in" data-aos-delay="200">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://placehold.co/400x300?text=Valve+3" class="card-img-top" alt="Valve 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Industrial Valve Type C</h5>
-                        <p class="card-text">Precision engineered valve for specific industrial needs.</p>
-                        <a href="https://wa.me/+919978931555" target="_blank" class="btn btn-whatsapp w-100">Enquire Now</a>
+                
+                <!-- Immersive Visual -->
+                <div class="col-lg-5 hero-visual-col mt-lg-0 mt-4" data-aos="zoom-out-left">
+                    <div class="hero-3d-container">
+                        <div class="tech-circle-orbit"></div>
+                        <img src="./bti_valves/hero_valve_8k.png" alt="Industrial Valve" class="hero-main-img parallax-img">
+                        <div class="d-lg-flex d-none data-tag top-left" data-aos="fade-in" data-aos-delay="600">
+                            <span>PRESSURE: 150-2500#</span>
+                        </div>
+                        <div class="d-lg-flex d-none data-tag bottom-right" data-aos="fade-in" data-aos-delay="800">
+                            <span>MATERIAL: FORGED STEEL</span>
+                        </div>
+                        <div class="d-lg-flex d-none data-tag top-right" data-aos="fade-in" data-aos-delay="1000" style="top: 20%; right: -15%;">
+                            <span>PNEUMATIC ACTUATED</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Call to Action Section -->
+
+    <!-- Product Showcase Sections -->
+    <section class="valve-showcase" id="all-valves">
+        <div class="unique-header-wrapper">
+            <div class="container">
+                <h2 class="unique-title" data-aos="fade-up">Premium Valve Collection</h2>
+                <p class="unique-subtitle" data-aos="fade-up" data-aos-delay="100">Explore our complete range of industrial valves designed for performance and durability.</p>
+                <div class="unique-underline" data-aos="zoom-in" data-aos-delay="200"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div id="dynamic-valve-content">
+                <!-- Content will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
     <section class="py-lg-5 pt-4 pb-0 bg-dark">
         <div class="container">
             <div class="row align-items-center text-center text-md-start">
                 <div class="col-md-8 mb-4 mb-md-0">
-                    <h3 class="text-white mb-2">Need Help Choosing the Right Machine?</h3>
-                    <p class="text-white-50 mb-0">Our experts are ready to assist you with your requirements. Contact us today!</p>
+                    <h3 class="text-white mb-2">Need a Custom Valve Solution?</h3>
+                    <p class="text-white-50 mb-0">We manufacture valves to your specific requirements. Get in touch with our engineering team.</p>
                 </div>
                 <div class="col-md-4 text-md-end">
                     <a href="https://wa.me/+919978931555" target="_blank" class="btn-whatsapp-modern">
                         <i class="fab fa-whatsapp"></i>
-                        <span>Contact Us Now</span>
+                        <span>Contact Engineers</span>
                     </a>
                 </div>
             </div>
@@ -197,8 +215,8 @@
                         </a>
                     </div>
                     <div class="footer-links mt-3">
-                        <p class="text-white-50 small mb-1"><i class="fas fa-phone me-2"></i>+91 997 893 1555</p>
-                        <p class="text-white-50 small mb-0"><i class="fas fa-envelope me-2"></i>bti1979@gmail.com</p>
+                        <a href="tel:+919978931555" class="text-white-50 small mb-1"><i class="fas fa-phone me-2"></i>+91 997 893 1555</a>
+                        <a href="mailto:bti1979@gmail.com" class="text-white-50 small mb-0"><i class="fas fa-envelope me-2"></i>bti1979@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -211,10 +229,119 @@
 
     <!-- Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Data Source -->
+    <script src="./js/valve_data.js"></script>
+    
     <script>
         AOS.init();
+
+        // Dynamic Product Generation
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('dynamic-valve-content');
+            
+            // Group By Categories (Optional if needed, but we can just list them all cleanly)
+            // Or create sections based on ID for navigation
+            
+            // Let's render them section by section as per the object order
+            valveProducts.forEach((product, index) => {
+                const sectionDiv = document.createElement('div');
+                sectionDiv.id = product.id;
+                sectionDiv.className = 'valve-feature-block reveal-on-scroll';
+                
+                // Zig-Zag Logic: Alternating visual arrangement
+                const isEven = index % 2 === 0;
+                const rowClass = isEven ? 'flex-row' : 'flex-row-reverse';
+                
+                const innerHtml = `
+                    <div class="row ${rowClass} align-items-center g-5">
+                        <!-- Content Side -->
+                        <div class="col-lg-7">
+                            <div class="valve-feature-content">
+                                <div class="feature-category-label">
+                                    <span class="vp-dot"></span>
+                                    ${product.category.toUpperCase()} SOLUTIONS
+                                </div>
+                                <h2 class="feature-title">${product.title}</h2>
+                                <p class="feature-desc">${product.description}</p>
+                                
+                                <div class="bento-grid">
+                                    ${product.specs.map((spec, i) => {
+                                        let bentoClass = "";
+                                        if (i === 0) bentoClass = "bento-wide";
+                                        
+                                        // Dynamic Icon Logic
+                                        const label = spec.split(':')[0].toLowerCase();
+                                        let iconClass = "fa-microchip"; // Default
+                                        
+                                        if (label.includes('material')) iconClass = "fa-layer-group";
+                                        else if (label.includes('ends')) iconClass = "fa-link";
+                                        else if (label.includes('pressure')) iconClass = "fa-gauge-high";
+                                        else if (label.includes('size')) iconClass = "fa-arrows-left-right";
+                                        else if (label.includes('std') || label.includes('standard')) iconClass = "fa-certificate";
+                                        else if (label.includes('seat')) iconClass = "fa-shield-halved";
+                                        else if (label.includes('type')) iconClass = "fa-shapes";
+                                        else if (label.includes('lining')) iconClass = "fa-cube";
+                                        else if (label.includes('function')) iconClass = "fa-gears";
+
+                                        return `
+                                            <div class="bento-item ${bentoClass}">
+                                                <div class="bento-icon"><i class="fas ${iconClass}"></i></div>
+                                                <div class="bento-label">${spec.split(':')[0]}</div>
+                                                <div class="bento-value">${spec.split(':')[1] || spec}</div>
+                                            </div>
+                                        `;
+                                    }).join('')}
+                                </div>
+                                
+                                <div class="feature-action-row pt-4">
+                                    <a href="https://wa.me/+919978931555?text=I am interested in ${product.title}" target="_blank" class="btn-cyber-outline magnetic">
+                                        <i class="fab fa-whatsapp me-3"></i> CONFIGURE SYSTEM
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Image Side -->
+                        <div class="col-lg-5">
+                            <div class="valve-feature-visual">
+                                <img src="${product.image}" alt="${product.title}" class="img-fluid feature-img" onerror="this.src='./btitex/btilogo.png'">
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                sectionDiv.innerHTML = innerHtml;
+                container.appendChild(sectionDiv);
+
+                // Intersection Observer for Reveal Effect
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: "0px 0px -50px 0px"
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('revealed');
+                        }
+                    });
+                }, observerOptions);
+
+                observer.observe(sectionDiv);
+
+                // Mouse Tracking for Glow Effect
+                sectionDiv.addEventListener('mousemove', (e) => {
+                    const rect = sectionDiv.getBoundingClientRect();
+                    const x = ((e.clientX - rect.left) / rect.width) * 100;
+                    const y = ((e.clientY - rect.top) / rect.height) * 100;
+                    sectionDiv.style.setProperty('--mouse-x', `${x}%`);
+                    sectionDiv.style.setProperty('--mouse-y', `${y}%`);
+                });
+            });
+        });
     </script>
 </body>
 </html>
+

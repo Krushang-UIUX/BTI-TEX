@@ -22,7 +22,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="/js/app.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/theme-toggle.js" defer></script>
 </head>
 <body oncontextmenu="return false;">
     <script>
@@ -36,7 +37,7 @@
     </script>
     
     <!-- Topbar -->
-    <header class="topbar bg-dark py-4 d-flex align-items-center">
+    <header class="topbar py-4 d-flex align-items-center">
         <div class="container d-flex justify-content-between align-items-center text-white small">
             <div class="icons d-flex gap-2">
                 <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank"
@@ -50,7 +51,7 @@
             <div class="auth d-flex align-items-center">
                 
                 <div class="d-flex align-items-center">
-                    <img src="./icons/cart.svg" alt="" class="me-2 cart-icon">
+                    <i class="fas fa-file-invoice me-2"></i>
                     <span>GST No. 24AACCB5856C1ZZ</span>
                 </div>
                 
@@ -62,29 +63,31 @@
     <section class="py-4 position-relative gear-background">
         <div class="container">
             <div class="row align-items-center">
-                 <!-- Left: Phone Info -->
-                 <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start">
-                     <img src="./icons/phone.svg" class="me-3 icon-lg" alt=""> <!-- Large Icon -->
-                     <div>
-                         <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
-                         <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
-                         <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
-                     </div>
-                 </div>
-                 
-                 <!-- Center: Logo -->
-                 <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center">
-                     <img class="img-fluid my-2 main-logo" src="./btitex/btilogo.png" alt="BTI LOGO">
-                 </div>
-                 
-                 <!-- Right: Hours Info -->
-                 <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end">
-                     <img src="./icons/clock.svg" class="me-3 order-md-2 icon-lg" alt=""> <!-- Large Icon -->
-                     <div class="order-md-1 me-md-3">
-                         <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
-                         <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
-                     </div>
-                 </div>
+                <!-- Left: Phone Info -->
+                <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start" data-aos="fade-right">
+                    <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt="">
+                    <!-- Large Icon -->
+                    <div>
+                        <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
+                        <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
+                        <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Center: Logo -->
+                <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI LOGO">
+                </div>
+
+                <!-- Right: Hours Info -->
+                <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end" data-aos="fade-left">
+                    <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt="">
+                    <!-- Large Icon -->
+                    <div class="order-md-1 me-md-3">
+                        <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
+                        <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -37,13 +37,21 @@
 
 :root {
     --primary: #3090c7;
-    --secondary: #232B38;
-    --ternary: #6C6C6C;
-    --danger: #FE4545;
-    --pure: #FEFEFE;
-    --light: #F0F0F0;
-    --heaven: #FFFFFF;
-    --footer: #2d333f;
+    --primary-light: #e0f2fe;
+    --secondary: #0f172a;
+    --ternary: #64748b;
+    --danger: #ef4444;
+    --pure: #ffffff;
+    --light: #f8fafc;
+    --heaven: #ffffff;
+    --footer: #0f172a;
+    --glass: rgba(255, 255, 255, 0.7);
+    --border: rgba(226, 232, 240, 0.8);
+    --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+
+    /* Use theme variables where possible */
+    --main-bg: var(--bg-color, #ffffff);
+    --main-text: var(--text-color, #1a1a1a);
 }
 
 /* Reset */
@@ -941,6 +949,7 @@ body {
     font-size: 3.5rem;
     background: linear-gradient(135deg, var(--primary) 0%, #1a5c85 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease;
 }
@@ -959,20 +968,19 @@ body {
 
 /* Valve/Coming Soon Specific */
 .valve-wrapper {
-    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 219, 77, 0.1) 100%);
+    width: 120px;
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
     flex-direction: column;
     gap: 0.5rem;
-    border: 1px dashed #FFD700;
 }
 
 .valve-text {
-    font-family: "Raleway-black";
-    font-size: 1.5rem;
-    color: #DAA520;
+    font-size: 3.5rem;
+    color: var(--light);
 }
 
 .coming-soon-badge {
-    background: #FFD700;
+    background: var(--footer);
     color: #232B38;
     font-size: 0.65rem;
     font-weight: 800;
@@ -1550,4 +1558,9 @@ footer {
 .btn-outline-light:active {
     transform: translateY(0);
     box-shadow: none;
+}
+
+footer {
+    background: #0f172a !important;
+    border-top: 5px solid var(--primary);
 }
