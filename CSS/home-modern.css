@@ -43,23 +43,30 @@
 .hero-modern {
     position: relative;
     min-height: 85vh;
-    /* background: var(--gradient-hero); */
     overflow: hidden;
     display: flex;
     align-items: center;
     padding: 4rem 0;
+    background-image: url(../images/bg-website.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Keep content above overlay */
+.hero-modern > * {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-modern::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 80%;
-    height: 150%;
-    background: radial-gradient(circle, rgba(48, 144, 199, 0.08) 0%, transparent 70%);
-    animation: float 20s ease-in-out infinite;
-    pointer-events: none;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.60); /* Adjust opacity here */
+    z-index: 1;
 }
 
 .hero-modern::after {
@@ -633,8 +640,27 @@
 .about-modern {
     position: relative;
     padding: var(--section-padding) 0;
-    background: var(--bg-color);
+    background-image: url(../images/bg-website.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
     overflow: hidden;
+}
+
+/* White Overlay */
+.about-modern::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.60); /* Adjust opacity here */
+    z-index: 1;
+}
+
+/* Keep content above overlay */
+.about-modern > * {
+    position: relative;
+    z-index: 2;
 }
 
 .about-image-side {

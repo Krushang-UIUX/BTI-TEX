@@ -55,7 +55,26 @@
 }
 
 .about-section.alt-bg {
-    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+    background-image: url(../images/bg-website.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* White Overlay */
+.about-section.alt-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.60); /* Adjust opacity here */
+    z-index: 1;
+}
+
+/* Keep content above overlay */
+.about-section.alt-bg > * {
+    position: relative;
+    z-index: 2;
 }
 
 .about-section.dark-bg {
@@ -486,8 +505,27 @@
 
 /* Catalogue Section */
 .catalogue-section {
-    background: linear-gradient(180deg, #f1f5f9 0%, #e2e8f0 100%);
+    background-image: url(../images/bg-website.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
     padding: 80px 0;
+}
+
+/* White Overlay */
+.catalogue-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.60); /* Adjust opacity here */
+    z-index: 1;
+}
+
+/* Keep content above overlay */
+.catalogue-section > * {
+    position: relative;
+    z-index: 2;
 }
 
 .catalogue-grid {
