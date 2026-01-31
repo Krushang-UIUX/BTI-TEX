@@ -122,6 +122,7 @@ body {
     position: relative;
     padding: 120px 0;
     background: var(--vp-bg);
+    overflow-x: hidden;
 }
 
 .hero-glow-blob {
@@ -264,8 +265,8 @@ body {
     border-color: white;
 }
 
-.data-tag.top-left { top: 10%; left: -10%; }
-.data-tag.bottom-right { bottom: 10%; right: -10%; }
+.data-tag.top-left { top: 10%; left: 0; }
+.data-tag.bottom-right { bottom: 10%; right: 0; }
 
 .btn-cyber-outline {
     display: flex;
@@ -355,9 +356,30 @@ body {
     transform: scale(1.05) rotate(2deg);
 }
 
-/* Product Showcase Grid */
 .valve-showcase {
+    position: relative;
     padding: 120px 0;
+    background-image: url(../images/bg-website.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* White Overlay */
+.valve-showcase::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.60); /* Adjust opacity here */
+    z-index: 1;
+}
+
+/* Keep content above overlay */
+.valve-showcase > * {
+    position: relative;
+    z-index: 2;
 }
 
 .unique-title {
@@ -414,8 +436,18 @@ body {
 .feature-title {
     font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     color: #0f172a;
+}
+
+.feature-subtitle {
+    font-size: 1.1rem;
+    color: var(--vp-primary);
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
 }
 
 .feature-desc {
@@ -504,12 +536,143 @@ body {
     gap: 15px;
 }
 
+/* ================================
+   Valve Filter Buttons - Modern Design
+   ================================ */
+
+.valve-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem 2rem;
+    background: var(--vp-surface);
+    backdrop-filter: blur(var(--vp-glass-blur));
+    -webkit-backdrop-filter: blur(var(--vp-glass-blur));
+    border-radius: 25px;
+    border: 1px solid var(--vp-border);
+    box-shadow: 0 10px 40px -10px rgba(48, 144, 199, 0.1);
+}
+
+.valve-filter-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--vp-text);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--vp-transition);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.valve-filter-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: 0.5s;
+}
+
+.valve-filter-btn:hover::before {
+    left: 100%;
+}
+
+.valve-filter-btn:hover {
+    border-color: var(--vp-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(48, 144, 199, 0.2);
+}
+
+.valve-filter-btn.active {
+    background: linear-gradient(135deg, var(--vp-primary) 0%, #00b4d8 100%);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 8px 25px rgba(48, 144, 199, 0.35);
+    transform: translateY(-2px);
+}
+
+.valve-filter-btn i {
+    margin-right: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.valve-filter-btn.active i {
+    animation: pulse-icon 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-icon {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Unique Header for Valve Section */
+.unique-header-wrapper {
+    margin-bottom: 2rem;
+}
+
+.unique-underline {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--vp-primary), #00b4d8, var(--vp-primary));
+    background-size: 200% 100%;
+    margin: 20px auto 0;
+    border-radius: 2px;
+    animation: gradient-flow 3s linear infinite;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+/* Filter animations for product cards */
+.product-card-3d.valve-hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.product-card-3d.valve-visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
 /* Mobile Adjustments */
 @media (max-width: 992px) {
+    .immersive-hero {padding: 60px 0;}
     .hero-title { font-size: 3.5rem; }
     .valve-header-strip { display: none; }
-    .valve-feature-block { padding: 40px 20px; }
+    .valve-feature-block { padding: 40px 20px; margin-bottom: 0px; }
     .feature-title { font-size: 2.2rem; }
     .feature-specs-grid { grid-template-columns: 1fr; }
+    .tech-circle-orbit { display: none; }
+    
+    .valve-filter-container {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    
+    .valve-filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .valve-filter-btn i {
+        display: none;
+    }
 }
 

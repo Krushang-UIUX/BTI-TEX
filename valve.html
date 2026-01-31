@@ -13,6 +13,8 @@
     
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/valve-modern.css">
+    <link rel="stylesheet" href="./CSS/valve-3d-cards.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     
     <!-- Scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -125,7 +127,7 @@
                 </div>
                 
                 <!-- Immersive Visual -->
-                <div class="col-lg-5 hero-visual-col mt-lg-0 mt-4" data-aos="zoom-out-left">
+                <div class="col-lg-5 px-0 hero-visual-col mt-lg-0 mt-4" data-aos="zoom-out-left">
                     <div class="hero-3d-container">
                         <div class="tech-circle-orbit"></div>
                         <img src="./bti_valves/hero_valve_8k.png" alt="Industrial Valve" class="hero-main-img parallax-img">
@@ -135,7 +137,7 @@
                         <div class="d-lg-flex d-none data-tag bottom-right" data-aos="fade-in" data-aos-delay="800">
                             <span>MATERIAL: FORGED STEEL</span>
                         </div>
-                        <div class="d-lg-flex d-none data-tag top-right" data-aos="fade-in" data-aos-delay="1000" style="top: 20%; right: -15%;">
+                        <div class="d-lg-flex d-none data-tag top-right" data-aos="fade-in" data-aos-delay="1000" style="top: 20%; right: 5%;">
                             <span>PNEUMATIC ACTUATED</span>
                         </div>
                     </div>
@@ -144,7 +146,6 @@
         </div>
     </div>
 
-
     <!-- Product Showcase Sections -->
     <section class="valve-showcase" id="all-valves">
         <div class="unique-header-wrapper">
@@ -152,6 +153,42 @@
                 <h2 class="unique-title" data-aos="fade-up">Premium Valve Collection</h2>
                 <p class="unique-subtitle" data-aos="fade-up" data-aos-delay="100">Explore our complete range of industrial valves designed for performance and durability.</p>
                 <div class="unique-underline" data-aos="zoom-in" data-aos-delay="200"></div>
+            </div>
+        </div>
+        
+        <!-- Filter Section -->
+        <div class="container">
+            <div class="valve-filter-container" data-aos="fade-up" data-aos-delay="100">
+                <button class="valve-filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>All Valves
+                </button>
+                <button class="valve-filter-btn" data-filter="gate">
+                    <i class="fas fa-door-open"></i>Gate Valves
+                </button>
+                <button class="valve-filter-btn" data-filter="globe">
+                    <i class="fas fa-globe"></i>Globe Valves
+                </button>
+                <button class="valve-filter-btn" data-filter="ball">
+                    <i class="fas fa-circle"></i>Ball Valves
+                </button>
+                <button class="valve-filter-btn" data-filter="butterfly">
+                    <i class="fas fa-fan"></i>Butterfly Valves
+                </button>
+                <button class="valve-filter-btn" data-filter="check">
+                    <i class="fas fa-check-circle"></i>Check Valves
+                </button>
+                <button class="valve-filter-btn" data-filter="diaphragm">
+                    <i class="fas fa-compact-disc"></i>Diaphragm
+                </button>
+                <button class="valve-filter-btn" data-filter="strainer">
+                    <i class="fas fa-filter"></i>Strainers
+                </button>
+                <button class="valve-filter-btn" data-filter="safety">
+                    <i class="fas fa-shield-alt"></i>Safety
+                </button>
+                <button class="valve-filter-btn" data-filter="special">
+                    <i class="fas fa-star"></i>Special
+                </button>
             </div>
         </div>
         
@@ -165,7 +202,7 @@
     <!-- Call to Action -->
     <section class="py-lg-5 pt-4 pb-0 bg-dark">
         <div class="container">
-            <div class="row align-items-center text-center text-md-start">
+            <div class="row align-items-center text-center text-md-start mb-lg-0 mb-4">
                 <div class="col-md-8 mb-4 mb-md-0">
                     <h3 class="text-white mb-2">Need a Custom Valve Solution?</h3>
                     <p class="text-white-50 mb-0">We manufacture valves to your specific requirements. Get in touch with our engineering team.</p>
@@ -233,6 +270,7 @@
     
     <!-- Data Source -->
     <script src="./js/valve_data.js"></script>
+    <script src="./js/3d-product-viewer.js"></script>
     
     <script>
         AOS.init();
@@ -248,65 +286,99 @@
             valveProducts.forEach((product, index) => {
                 const sectionDiv = document.createElement('div');
                 sectionDiv.id = product.id;
-                sectionDiv.className = 'valve-feature-block reveal-on-scroll';
+                // Add category class for filtering
+                sectionDiv.className = `product-card-3d reveal-on-scroll valve-item valve-visible ${product.category}`;
+                sectionDiv.dataset.category = product.category;
                 
                 // Zig-Zag Logic: Alternating visual arrangement
                 const isEven = index % 2 === 0;
                 const rowClass = isEven ? 'flex-row' : 'flex-row-reverse';
                 
-                const innerHtml = `
-                    <div class="row ${rowClass} align-items-center g-5">
-                        <!-- Content Side -->
-                        <div class="col-lg-7">
-                            <div class="valve-feature-content">
-                                <div class="feature-category-label">
-                                    <span class="vp-dot"></span>
-                                    ${product.category.toUpperCase()} SOLUTIONS
-                                </div>
-                                <h2 class="feature-title">${product.title}</h2>
-                                <p class="feature-desc">${product.description}</p>
-                                
-                                <div class="bento-grid">
-                                    ${product.specs.map((spec, i) => {
-                                        let bentoClass = "";
-                                        if (i === 0) bentoClass = "bento-wide";
-                                        
-                                        // Dynamic Icon Logic
-                                        const label = spec.split(':')[0].toLowerCase();
-                                        let iconClass = "fa-microchip"; // Default
-                                        
-                                        if (label.includes('material')) iconClass = "fa-layer-group";
-                                        else if (label.includes('ends')) iconClass = "fa-link";
-                                        else if (label.includes('pressure')) iconClass = "fa-gauge-high";
-                                        else if (label.includes('size')) iconClass = "fa-arrows-left-right";
-                                        else if (label.includes('std') || label.includes('standard')) iconClass = "fa-certificate";
-                                        else if (label.includes('seat')) iconClass = "fa-shield-halved";
-                                        else if (label.includes('type')) iconClass = "fa-shapes";
-                                        else if (label.includes('lining')) iconClass = "fa-cube";
-                                        else if (label.includes('function')) iconClass = "fa-gears";
+                // Dynamic Icon Logic Function
+                const getIconClass = (label) => {
+                    const l = label.toLowerCase();
+                    if (l.includes('material')) return 'fa-layer-group';
+                    if (l.includes('ends')) return 'fa-link';
+                    if (l.includes('pressure')) return 'fa-gauge-high';
+                    if (l.includes('size')) return 'fa-arrows-left-right';
+                    if (l.includes('std') || l.includes('standard')) return 'fa-certificate';
+                    if (l.includes('seat')) return 'fa-shield-halved';
+                    if (l.includes('type')) return 'fa-shapes';
+                    if (l.includes('lining')) return 'fa-cube';
+                    if (l.includes('function')) return 'fa-gears';
+                    if (l.includes('body') || l.includes('test')) return 'fa-vial';
+                    if (l.includes('operation')) return 'fa-hand-pointer';
+                    if (l.includes('application')) return 'fa-industry';
+                    if (l.includes('construction')) return 'fa-wrench';
+                    if (l.includes('rating')) return 'fa-star';
+                    return 'fa-microchip';
+                };
 
-                                        return `
-                                            <div class="bento-item ${bentoClass}">
-                                                <div class="bento-icon"><i class="fas ${iconClass}"></i></div>
-                                                <div class="bento-label">${spec.split(':')[0]}</div>
-                                                <div class="bento-value">${spec.split(':')[1] || spec}</div>
-                                            </div>
-                                        `;
-                                    }).join('')}
+
+
+                // Generate spec grid items
+                const specItems = product.specs.map((spec, i) => {
+                    const label = spec.split(':')[0];
+                    const value = spec.split(':')[1] || spec;
+                    const iconClass = getIconClass(label);
+                    const wideClass = i === 0 ? 'spec-wide' : '';
+                    
+                    return `
+                        <div class="spec-item-modern ${wideClass}">
+                            <div class="spec-icon-modern">
+                                <i class="fas ${iconClass}"></i>
+                            </div>
+                            <div class="spec-label-modern">${label}</div>
+                            <div class="spec-value-modern">${value}</div>
+                        </div>
+                    `;
+                }).join('');
+
+                const innerHtml = `
+                    <div class="row ${rowClass} align-items-center g-0">
+                        <!-- 3D Image Side -->
+                        <div class="col-lg-5">
+                            <div class="card-3d-visual">
+                                <div class="image-3d-wrapper">
+                                    <img src="${product.image}" alt="${product.title}" class="product-3d-img" onerror="this.src='./btitex/btilogo.png'">
                                 </div>
                                 
-                                <div class="feature-action-row pt-4">
-                                    <a href="https://wa.me/+919978931555?text=I am interested in ${product.title}" target="_blank" class="btn-cyber-outline magnetic">
-                                        <i class="fab fa-whatsapp me-3"></i> CONFIGURE SYSTEM
-                                    </a>
+                                <div class="view-controls">
+                                    <button class="btn-rotate-left" title="Rotate Left">
+                                        <i class="fas fa-undo"></i>
+                                    </button>
+                                    <button class="btn-reset-view" title="Reset View">
+                                        <i class="fas fa-compress-arrows-alt"></i>
+                                    </button>
+                                    <button class="btn-rotate-right" title="Rotate Right">
+                                        <i class="fas fa-redo"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Image Side -->
-                        <div class="col-lg-5">
-                            <div class="valve-feature-visual">
-                                <img src="${product.image}" alt="${product.title}" class="img-fluid feature-img" onerror="this.src='./btitex/btilogo.png'">
+                        <!-- Content Side -->
+                        <div class="col-lg-7">
+                            <div class="card-content-modern">
+                                <div class="content-header-modern">
+                                    <div class="category-badge-modern">
+                                        ${product.category.toUpperCase()} SOLUTIONS
+                                    </div>
+                                    <h2 class="title-modern">${product.title}</h2>
+                                    <h5 class="subtitle-modern">${product.subtitle}</h5>
+                                    <p class="description-modern">${product.description}</p>
+                                </div>
+                                
+                                <div class="specs-grid-modern">
+                                    ${specItems}
+                                </div>
+                                
+                                <div class="action-row-modern">
+                                    <a href="https://wa.me/+919978931555?text=I am interested in ${product.title}" target="_blank" class="btn-whatsapp-modern">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span>WhatsApp Enquiry</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -340,6 +412,54 @@
                     sectionDiv.style.setProperty('--mouse-y', `${y}%`);
                 });
             });
+
+            // Valve Filter Functionality
+            const filterButtons = document.querySelectorAll('.valve-filter-btn');
+            const valveItems = document.querySelectorAll('.valve-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Update active button state
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    // Filter valve items with animation
+                    valveItems.forEach(item => {
+                        const itemCategory = item.dataset.category;
+                        
+                        if (filterValue === 'all' || itemCategory === filterValue) {
+                            // Show item
+                            item.classList.remove('valve-hidden');
+                            item.classList.add('valve-visible');
+                            item.style.display = '';
+                        } else {
+                            // Hide item
+                            item.classList.remove('valve-visible');
+                            item.classList.add('valve-hidden');
+                            // Use setTimeout to allow transition before hiding
+                            setTimeout(() => {
+                                if (item.classList.contains('valve-hidden')) {
+                                    item.style.display = 'none';
+                                }
+                            }, 400);
+                        }
+                    });
+
+                    // Refresh AOS animations after filter
+                    setTimeout(() => {
+                        if (typeof AOS !== 'undefined') {
+                            AOS.refresh();
+                        }
+                    }, 500);
+                });
+            });
+
+            // Initialize 3D viewers after all dynamic content is loaded
+            if (typeof window.reinitialize3DViewers === 'function') {
+                window.reinitialize3DViewers();
+            }
         });
     </script>
 </body>
