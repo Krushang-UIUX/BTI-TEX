@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/about.css">
+    <link rel="stylesheet" href="./CSS/header-redesign.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/zoom.css">
 
@@ -85,82 +86,51 @@
     </script>
 
     <!-- Topbar -->
-    <header class="topbar py-4 d-flex align-items-center">
-        <div class="container d-flex justify-content-between align-items-center text-white small">
-            <div class="icons d-flex gap-2">
-                <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank"
-                            class="text-white" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
-                        <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank"
-                            class="text-white" aria-label="IndiaMart"><i class="fab fa-google fa-lg"></i></a>
-                        <a href="https://wa.me/+919978931555" target="_blank" class="text-white" aria-label="WhatsApp"><i
-                                class="fab fa-whatsapp fa-lg"></i></a>
-                        <a href="https://www.youtube.com/user/bti1979" target="_blank" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
-            </div>
-            <div class="auth d-flex align-items-center">
-                
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-file-invoice me-2"></i>
-                    <span>GST No. 24AACCB5856C1ZZ</span>
+    <!-- Glassy Header -->
+    <header class="glass-header-wrapper">
+        <!-- Topbar -->
+        <div class="glass-topbar">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                    <a href="tel:+919978931555"><i class="fas fa-phone-alt"></i> +91 997 893 1555</a>
+                    <a href="mailto:bti1979@gmail.com" class="d-none d-md-block"><i class="fas fa-envelope"></i> bti1979@gmail.com</a>
                 </div>
-                
-            </div>
-        </div>
-    </header>
-
-    <!-- Info Section with Gear Pattern -->
-    <section class="py-4 position-relative gear-background">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left: Phone Info -->
-                <div class="col-lg-3 col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-start" data-aos="fade-right">
-                    <img src="./icons/phone.svg" class="me-3" style="width: 40px; height: 40px;" alt="Phone Icon" loading="lazy">
-                    <!-- Large Icon -->
-                    <div>
-                        <h6 class="mb-0 fw-bold text-dark">Mr. Zubair Shaikh</h6>
-                        <p class="mb-0 small text-muted">Call Us: <a href="tel:+919978931555" class="text-decoration-none text-muted">+91 997 893 1555</a></p>
-                        <p class="mb-0 small text-muted">Email: <a href="mailto:bti1979@gmail.com" class="text-decoration-none text-muted">bti1979@gmail.com</a></p>
-                    </div>
-                </div>
-
-                <!-- Center: Logo -->
-                <div class="col-lg-6 col-md-4 mb-3 mb-md-0 text-center" data-aos="zoom-in" data-aos-delay="200">
-                    <img class="img-fluid my-2" src="./btitex/btilogo.png" style="max-height: 80px;" alt="BTI TEX Logo" loading="lazy">
-                </div>
-
-                <!-- Right: Hours Info -->
-                <div class="col-lg-3 col-md-4 d-flex justify-content-center justify-content-md-end align-items-center text-center text-md-end" data-aos="fade-left">
-                    <img src="./icons/clock.svg" class="me-3 order-md-2" style="width: 40px; height: 40px;" alt="Clock Icon" loading="lazy">
-                    <!-- Large Icon -->
-                    <div class="order-md-1 me-md-3">
-                        <h6 class="mb-0 fw-bold text-dark">Working Hours:</h6>
-                        <p class="mb-0 small text-muted">Mon - Sat (10.00am - 5.00pm)</p>
+                <div class="d-flex align-items-center gap-3">
+                    <div class="social-icons d-flex gap-2">
+                         <a href="https://www.facebook.com/BTI-Tex-Pvt-ltd-204224950413730/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                         <a href="https://www.indiamart.com/btitexprivatelimited/profile.html" target="_blank"><i class="fab fa-google"></i></a>
+                         <a href="https://wa.me/+919978931555" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                         <a href="https://www.youtube.com/user/bti1979" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-0">
-        <div class="container">
-            <p class="d-lg-none d-flex align-baseline text-white mb-0">
-                Menu    
-            </p>
-             <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse py-lg-2" id="mainNavbar">
-                 <ul class="navbar-nav justify-content-around w-100">
-                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html">Home</a></li>
-                     <li class="nav-item"><a class="nav-link active px-4 py-3 nav-link-custom-active" href="aboutus.html">About Us</a></li>
-                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="product.html">Products</a></li>
-                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="valve.html">Valve</a></li> 
-                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#services">Services</a></li>
-                     <li class="nav-item"><a class="nav-link px-4 py-3 hover-animate" href="home.html#contact">Contact Us</a></li>
-                 </ul>
-             </div>
-        </div>
-    </nav>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg glass-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./btitex/btilogo.png" alt="BTI TEX Logo">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#glassNavbar" aria-controls="glassNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars text-dark"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="glassNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="aboutus.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="valve.html">Valves</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html#services">Services</a></li>
+                        <li class="nav-item">
+                            <a class="btn btn-nav-contact" href="home.html#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
     <!-- Hero Section -->
     <main id="main-content">
