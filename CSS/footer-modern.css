@@ -1,0 +1,330 @@
+/* ============================================
+   Footer Section - Glassy Floating Design
+   ============================================ */
+.footer-wrapper-modern {
+    position: relative;
+    background: #111827; /* Dark background for footer area */
+    margin-top: 100px; /* Space for the floating card overlap */
+    padding-bottom: 0;
+}
+
+/* Floating Newsletter/CTA Card */
+.newsletter-glass-modern {
+    position: absolute;
+    top: -80px; /* Overlap upwards */
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #3090c7 0%, #0ea5e9 100%);
+    border-radius: 30px;
+    padding: 3rem;
+    box-shadow: 
+        0 20px 50px rgba(48, 144, 199, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.newsletter-glass-modern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(30%, -30%);
+}
+
+.newsletter-glass-modern::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-30%, 30%);
+}
+
+.newsletter-title {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Floating Whatsapp Button */
+.btn-whatsapp-floating {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: #3090c7;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.btn-whatsapp-floating:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    color: #0d4f7a;
+    background: white;
+}
+
+.btn-whatsapp-floating i {
+    font-size: 1.25rem;
+}
+
+/* Footer Section */
+.footer-modern {
+    position: relative;
+    /* Background image with overlay */
+    background-image: url('../images/bti-main-view.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 80px; /* Space for content below floating card */
+    padding-bottom: 0;
+}
+
+.footer-glass-container {
+    background: rgba(15, 23, 42, 0.9); /* Dark overlay */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem; /* Additional padding inside glass */
+    padding-bottom: 0;
+}
+
+.footer-brand h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    background: linear-gradient(135deg, white 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-text {
+    color: #94a3b8;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-footer-link {
+    display: inline-flex;
+    align-items: center;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-footer-link:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #3090c7;
+    border-radius: 2px;
+}
+
+/* Center aligning heading underline for centered text */
+.text-center .footer-heading::after,
+.text-md-center .footer-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+    .text-md-start .footer-heading::after {
+        left: 0;
+        transform: none;
+    }
+}
+
+.footer-links-list,
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-list li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links-list a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links-list a:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+.footer-contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #94a3b8;
+}
+
+.footer-contact-list i {
+    color: #3090c7;
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.footer-contact-list a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-list a:hover {
+    color: white;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: #3090c7;
+    transform: translateY(-3px);
+    border-color: #3090c7;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.copyright-text,
+.designer-text {
+    color: #64748b;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.copyright-text a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.copyright-text a:hover {
+    color: white;
+}
+
+/* Responsive Footer */
+@media (max-width: 991.98px) {
+    .newsletter-glass-modern {
+        padding: 2rem;
+    }
+
+    .newsletter-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer-wrapper-modern {
+        margin-top: 60px;
+    }
+
+    .newsletter-glass-modern {
+        position: relative;
+        top: 0;
+        margin-bottom: -2rem; /* Pull footer up slightly or just stack */
+        transform: translateY(-50%);
+        margin-top: 0;
+        top: -30px;
+        padding: 1.5rem;
+    }
+
+    .footer-modern {
+        padding-top: 0;
+    }
+
+    .footer-glass-container {
+        padding-top: 5rem; /* Space for the overlapping card */
+    }
+
+    .btn-whatsapp-floating {
+        width: 100%;
+        justify-content: center;
+    }
+}

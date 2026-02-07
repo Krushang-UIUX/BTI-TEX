@@ -19,7 +19,7 @@ body {
 
 /* Main Header Wrapper */
 .glass-header-wrapper {
-    position: relative;
+    position: sticky;
     top: 0;
     left: 0;
     height: fit-content;

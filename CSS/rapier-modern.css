@@ -1,0 +1,367 @@
+/* ========================================
+   MODERN RAPIER LOOM PAGE STYLES
+   Glassy & Gradient Theme 2026
+======================================== */
+
+:root {
+    --primary-gradient: linear-gradient(135deg, #3090c7 0%, #1e6fa0 50%, #0d4f7a 100%);
+    --secondary-gradient: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    --glass-bg-light: rgba(255, 255, 255, 0.7);
+    --glass-bg-dark: rgba(15, 23, 42, 0.6);
+    --glass-border-light: rgba(255, 255, 255, 0.5);
+    --glass-border-dark: rgba(255, 255, 255, 0.1);
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========================================
+   Hero Section Matches About Us
+======================================== */
+.rapier-hero {
+    position: relative;
+    padding: 140px 0 100px;
+    background: radial-gradient(circle at top right, #0f172a, #1e293b);
+    overflow: hidden;
+    color: white;
+}
+
+/* Animated Background Elements */
+.rapier-hero::before {
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(48, 144, 199, 0.15) 0%, transparent 60%);
+    border-radius: 50%;
+    animation: pulseGlow 8s infinite alternate;
+    z-index: 0;
+}
+
+.rapier-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(96, 165, 250, 0.1) 0%, transparent 60%);
+    border-radius: 50%;
+    animation: pulseGlow 10s infinite alternate-reverse;
+    z-index: 0;
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+}
+
+.hero-content-glass {
+    position: relative;
+    z-index: 2;
+}
+
+.rapier-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.rapier-subtitle {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.btn-hero-glass {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-hero-glass:hover {
+    background: linear-gradient(135deg, #3090c7 0%, #1e6fa0 100%);
+    border-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(48, 144, 199, 0.3);
+}
+
+.hero-image-glass-container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+}
+
+.hero-image-glass-container img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ========================================
+   Features Section - Glass Cards
+======================================== */
+.features-section-modern {
+    padding: 80px 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+}
+
+.glass-feature-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: var(--card-shadow);
+    height: 100%;
+}
+
+.glass-feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 20px 40px rgba(48, 144, 199, 0.15);
+}
+
+.icon-wrapper-glass {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    color: #3090c7;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.glass-feature-card:hover .icon-wrapper-glass {
+    background: var(--primary-gradient);
+    color: white;
+    transform: scale(1.1) rotate(5deg);
+}
+
+.glass-feature-card h4 {
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.glass-feature-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ========================================
+   Detailed Info Section (Infrastructure Style)
+======================================== */
+.details-section-glass {
+    padding: 100px 0;
+    background: url('../images/bg-website.png') fixed center/cover;
+    position: relative;
+}
+
+.details-section-glass::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+}
+
+.glass-container-large {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
+}
+
+.feature-list-glass li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.feature-list-glass li:hover {
+    background: white;
+    transform: translateX(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon-small {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-gradient);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+
+.text-primary {
+    color:  var(--text-primary) !important;
+}
+
+.stats-glass-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-box-glass {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.stat-box-glass .number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #3090c7;
+}
+
+.stat-box-glass .label {
+    font-size: 0.9rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   Services Section (Modern Cards)
+======================================== */
+.services-glass-section {
+    padding: 80px 0;
+    background: #f1f5f9;
+}
+
+.service-card-modern {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+.service-card-modern:hover {
+    border-color: #3090c7;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(48, 144, 199, 0.1);
+}
+
+.service-icon-modern {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ========================================
+   Contact Section (Dark Glass)
+======================================== */
+.contact-glass-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.glass-contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.contact-item-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: background 0.3s ease;
+}
+
+.contact-item-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(48, 144, 199, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+    font-size: 1.2rem;
+}
