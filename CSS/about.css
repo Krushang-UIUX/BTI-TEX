@@ -6,7 +6,7 @@
 /* Modern Hero Section */
 .about-hero {
     position: relative;
-    padding: 140px 0 100px;
+    padding: 50px 0 100px;
     background: radial-gradient(circle at top right, #1e293b, #0f172a);
     overflow: hidden;
     display: flex;
@@ -613,28 +613,37 @@
 
 .catalogue-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .catalogue-card {
     background: #fff;
-    border-radius: 24px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .catalogue-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(48, 144, 199, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(48, 144, 199, 0.15);
 }
 
 .catalogue-card .image-wrapper {
     position: relative;
-    height: 280px;
+    width: 45%;
+    height: 100%;
+    aspect-ratio: 16/10;
+    flex-shrink: 0;
     overflow: hidden;
 }
 
@@ -646,7 +655,7 @@
 }
 
 .catalogue-card:hover .image-wrapper img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .catalogue-card .image-overlay {
@@ -655,7 +664,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(15, 23, 42, 0.8) 0%, transparent 100%);
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.4) 0%, transparent 100%);
 }
 
 .catalogue-card .card-badge {
@@ -664,16 +673,35 @@
     left: 20px;
     background: linear-gradient(135deg, #3090c7 0%, #60a5fa 100%);
     color: #fff;
-    padding: 8px 16px;
+    padding: 6px 14px;
     border-radius: 30px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+    z-index: 2;
 }
 
 .catalogue-card .card-content {
     padding: 30px;
+    flex-grow: 1;
+}
+
+/* Responsive List View */
+@media (max-width: 768px) {
+    .catalogue-card {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .catalogue-card .image-wrapper {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .catalogue-card .image-overlay {
+        background: linear-gradient(to top, rgba(15, 23, 42, 0.5) 0%, transparent 100%);
+    }
 }
 
 .catalogue-card .card-meta {
