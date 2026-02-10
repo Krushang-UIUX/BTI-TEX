@@ -242,6 +242,10 @@ body {
     display: none; /* Hide default arrow */
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    top: 30px !important;
+}
+
 /* Show dropdown on hover for desktop */
 @media (min-width: 992px) {
     .nav-item.dropdown:hover .dropdown-menu-glass {

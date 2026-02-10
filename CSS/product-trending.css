@@ -34,7 +34,7 @@ body {
 
 /* Hero Section */
 .product-hero-modern {
-    padding: 80px 0 80px;
+    padding: 60px 0 20px;
     background: transparent;
     position: relative;
     overflow: hidden;
@@ -322,5 +322,15 @@ body {
         overflow-x: auto;
         justify-content: flex-start;
         padding-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .product-image-wrapper {
+        padding: 20px;
+    }
+
+    .modern-thumbs.xzoom-thumbs {
+        padding-top: 10px;
     }
 }
