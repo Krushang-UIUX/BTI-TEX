@@ -3,7 +3,7 @@
     --glass-border: rgba(255, 255, 255, 0.3);
     --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     --glass-blur: 15px;
-    --topbar-bg: #1a1a1a;
+    --topbar-bg: #00041b;
     --topbar-text: rgba(255, 255, 255, 0.8);
     --primary-color: #3090c7;
     --hover-color: #0d6efd;
@@ -15,6 +15,7 @@
 body {
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden !important;
 }
 
 /* Main Header Wrapper */
@@ -41,6 +42,7 @@ body {
     color: var(--topbar-text);
     text-decoration: none;
     transition: color 0.2s;
+    font-size: 1rem;
 }
 
 .glass-topbar a:hover {

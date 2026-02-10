@@ -148,7 +148,7 @@
         font-size: 1.1rem;
     }
     .about-meal .about-meal-wrap{
-        font-size: 14px;
+        font-size: 0.875rem;
         flex-direction: column;
     }
     .about-meal .about-meal-wrap img{
@@ -212,7 +212,7 @@
     }
     
     .about-meal .about-meal-wrap{
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     
     section{

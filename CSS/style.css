@@ -736,7 +736,7 @@ footer footer.copyright a {
     justify-content: center;
     /* align-items: center; */
     flex-direction: row;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .image {
@@ -763,7 +763,7 @@ footer footer.copyright a {
         align-items: center;
         flex-direction: column;
         margin: 10px 0px;
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
     nav {
@@ -787,7 +787,7 @@ footer footer.copyright a {
     }
 
     .text span {
-        font-size: 50px;
+        font-size: 3.125rem;
         justify-content: center;
         align-items: center;
     }
@@ -1531,5 +1531,15 @@ footer {
 
 footer {
     background: #0f172a !important;
-    border-top: 5px solid var(--primary);
+    border-top: 3px solid var(--primary);
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        border-top: none;
+    }
+
+    .footer-glass-container {
+        padding-top: 40px !important;
+    }
 }
