@@ -204,13 +204,30 @@
     color: #94a3b8;
     text-decoration: none;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.footer-links-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
 }
 
 .footer-links-list a:hover {
     color: #38bdf8;
-    transform: translateX(5px);
+    transform: translateX(8px);
+}
+
+.footer-links-list a:hover::after {
+    width: 100%;
 }
 
 .footer-contact-list li {
