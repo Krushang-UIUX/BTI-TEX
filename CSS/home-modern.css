@@ -45,7 +45,7 @@
    ============================================ */
 .hero-modern {
     position: relative;
-    min-height: 100vh;
+    min-height: 85vh;
     overflow: hidden;
     display: flex;
     align-items: center;

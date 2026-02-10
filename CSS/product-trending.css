@@ -114,7 +114,7 @@ body {
 /* Product Cards Grid */
 .product-grid-modern {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 49% 49%;
     gap: 40px;
     row-gap: 60px; /* Better vertical breathing room */
     padding-bottom: 80px;
